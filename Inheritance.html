@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<body style="background-color:black";>
+<head>
+    <meta charset="UTF-8">
+    <title>Inheritance</title>
+</head>
+<style>
+</style>
+<style>
+    button {
+        transition: transform .1s ease-in-out;
+    }
+    button:hover {
+        transform: scale(.9);
+    }
+    p {text-align: center;}
+    p {color: whitesmoke}
+    h1 {text-align: left;}
+    h1 {color: whitesmoke}
+    button {
+        background: darkred;
+        color: whitesmoke;
+        height: 70px;
+        width: 150px;
+    }
+    body {
+        object-fit: cover;
+        height: 100%;
+    }
+</style>
+
+<body>
+<center><font size="10" color="#8b0000">Inheritance</font></center>
+<p>
+    Classes can be linked together in order to pass data through one another. This idea is known
+    as<font color="#fafad2"> <b>Inheritance</b></font>
+    This base class / derived class relationship is often referred to as an "is a" relationship
+    because the derived object really is an instance of the base object -- it's usually just a bit more specific (like a subcategory).
+    The take out common features within the base class if they are used within the inherited classes
+    It is essentially just a subcatagory of the base class.
+    Note that this is different from the "has-a" relationship, in which objects are embedded inside of others
+    (i.e. one object is a component of another).
+</p>
+<h1><font color="#8b0000" size="5"><b>Syntax:</b></font>
+    <font size="2">class derivedClassName : public baseClassName<></font></h1>
+<font color="#8b0000" size="5"><b>Course Examples</b></font><h1><font size="2">
+    class Sport {. . .}; <img src="inheritance2.png" alt="Inheritance" width="300" height="200" align="right" >
+    <br>
+    class Football : public Sport {. . .};<br>
+    class Checking : public Account {. . .};<br>
+    class Baseball : public Sport {. . .};<br>
+    class Car : public Vehicle {. . .};<br>
+    class Honda : public Car {. . .};<br>
+    The above is for header file declaration!<br>
+</font></h1> <h1><font size="5" color="#8b0000">Protection Levels:</font></h1>
+<p>Public signifies in this case that it is publicly derived from the base class name
+In order to move data between these classes through inheritance we use protections, and
+    public member data. Protection levels include public and private;</p>
+<h1><font size="3" color="#f0f8ff"><b><font color="#fafad2">public - </font></b>Any member that is public can be accessed by name from anywhere.</font> <br>
+    <font size="3" color="#f0f8ff"><b><font color="#fafad2">public - </font></b>Any member that is private can be accessed directly only by the class in which it is declared.</font></h1>
+<p>The keyword protected: allows for inherited classes to have access to those member functions/data.
+apart from this, it operates the same as the private member data.
+    <br><b><font color="#fafad2">protected - </font></b> Any member that is protected can be accessed directly by the class in which it is
+    declared, and by any classes that are derived from that class (but not from anywhere else).
+</p>
+<h1><font color="#8b0000" size="5">Class Examples <br></font>
+    <a href="https://www.cs.fsu.edu/~myers/cop3330/examples/inher/geombuild/geom2.h"><font color="#ffb6c1" size="2">Drawing Class</font></a>
+    <br><a href="https://www.cs.fsu.edu/~myers/cop3330/examples/inher/sample.cpp"><font color="#ffb6c1" size="2">Destructors Example</font></a>
+    <br><a href="https://www.cs.fsu.edu/~myers/cop3330/examples/inher/geom"><font color="#ffb6c1" size="2">Drawing Class 2</font></a>
+</h1>
+<p>The derived object is in an "is-an" relationship, an example being a car "is a" vehicle.
+A "has-a" relationship references the data within the class. A car has a motor, A dog has a tail.</p>
+<h1><font size="5" color="#8b0000">Constructors in derived classes:</font></h1>
+<p>In this case, the derived object "is-an" instance of the base class as well.  So, when a derived object is created,
+    the constructors from the base and derived classes will run. The order in which they run is important, too -- the
+    base class constructor runs first, then the derived.
+    <i><font size="3" color="white">"In other words the car class would run before the honda class"</font></center></i>
+</p>
+<h1>
+    <font size="3"><b><i>Buddha</i> May Run In This Way</b><br>
+    class Animals -> class Dogs -> class Boykin Spaniels -> Within The Dog Array</font>
+</h1>
+<p> Constructors may also have parameters within the inherited classes. For a derived class more
+    data may need to be sent through. For example the car <br>Honda h(2, 3, 4, "green", "Accord");<br> <br>
+    The numbers {2,3 for example} in the above example may be used to pass to the base functions. We can distribute
+    the parameters to the appropriate functions we use an initalization list. The syntax can be seen below
+</p>
+<h1><font size="2">function prototype : initialization list
+    {function body}<br></font>
+    <font color="#8b0000" size="5">This could be written as:</font><br>
+    <font size="2">
+        Vehicle::Vehicle(int c, int id)<br>
+        // the first params would be used by this parent constructor
+        { vehicleCat = c; idNumber = id;}<br>
+        Car::Car(int c, int nd, char * cc) : Vehicle (c, id)<br>
+        // this function moves the first 2 params to vehicle, using only nd & cc<br>
+        { numDoor = nd; strcpy(carColor, cc); } <br>
+        Honda::Honda(int c, int id, int nd, char * cc, char * mod) :: Car (c, id, nd, cc)<br>
+    </font>
+</h1>
+<h1>
+    <font color="#8b0000" size="5">Function Overriding:</font></h1><p>
+    Since these classes are derived from one another they inherit from the base class. Take for example a students grad
+    a class representing the students as a wholes data would be inherited by all the students, however the subclass computer
+    science majors may only be inherited by a few students. However, if the called function should look different in each of the
+    subclasses (an example being a grade calculation function; different grading styles may occur per major) we need
+    to override the function.We just need to redeclare the "GradeReport" within the sub class functions. Remember that the
+    derived classes inherit <font color="#fafad2"><b>everything</b></font> from its parent classes. To call the parent functions
+    we need :: to refrence. Ex. Student::GradeReport(); <br></p>
+<h1><a href="https://www.cs.fsu.edu/~myers/cop3330/examples/inher/geom2"><font color="#ffb6c1" size="2">Examples of function overriding for the drawing program</font>
+</a> </h1>
+<center><font size="10" color="#8b0000">Virtual Functions</font></center>
+<p> We cannot use a basic loop (as given in the class example) to store the list of students. This is because of possible seperation within the array-
+    some students may be undergraduates, some may be graduates, etc. To account for this we can use a few solutions. We may create
+    arrays within each subtype, however this is not scalable so may be hard to use in larger applications. We can get around this issue by
+    using a base class pointer. Normally a pointer may only point at one type however, a pointer to a base class can be pointed at an object derived from
+    the base class. Similarly, a base class type reference variable can refer to an object derived from that base class.
+</p>
+<h1>
+    <font size="2">
+        Student s; Grad g; Undergrad u;<br>
+        Student *sp1, *sp2, *sp3;<br>
+        sp1 = &s;    // sp1 is now pointing at Student object <br>
+        sp2 = &g;    // sp2 is now pointing at Grad object <br>
+        sp3 = &u;    // sp3 is now pointing at Undergrad object <br>
+    </font>
+    <font size="5" color="#8b0000">Herogeneous List</font>
+</h1>
+<p>
+    A <font color="#fafad2"><b>heterogeneous list</b></font> is made by creating a single array of pointers to the base class. The pointers can be pointed to any objects which are derived from the base class.
+    So it is essentially a list of pointers to class object, an array of objects. This allows us to store diffrent data types within the array because they are all objects. Everything is a pointer
+    to the base class
+</p>
+<h1>
+    <font size="2">
+        Student * list[300000]; // an array of Student Pointers <br>
+        list[0] = &g;           // using the earlier grad object <br>
+        list[1] = &u;           // undergrad object <br>
+        list[2] = new Grad;     // dynamic grad object <br>
+        // can add any subtype of student <br>
+    </font>
+    <font size="5" color="#8b0000">Virtual Functions</font>
+</h1>
+<p>
+    Heterogeneous Functions may solve the first issue, however who's version of Grade Report will run? if
+    we attempted to run functions within the student list (like list[i]-> GradeReport();) we run into the issue of binding
+    because list[i] is declared as a student pointer. The function call is bound to the definition. This means that the definition
+    is static and the compiler cannot know what we would be pointing towards, because of this we need a way to bind to the correct definition
+    at run time (dynamic).
+    <br>
+    The <font color="#fafad2">virtual</font> keyword allows us to link the definition dynamically. This will override the base class function only when it
+    is called through a pointer, so it will run the target version. The syntax (in the student example) can be seen below
+</p>
+<h1>
+    <font size="2">
+        class Student<br>
+        { public:<br>
+        virtual void GradeReport();<br>
+        };
+    </font>
+</h1>
+<p>
+    Now the grade report function can be called through a pointer base class. Virtual functions are not
+    specific to heterogeneous lists, they just work well in conjunction.
+</p>
+<h1>
+    <font size="2">
+        Student *sp1, *sp2, *sp3; <br>
+        Student s;    Grad g;     Undergrad u; <br>
+        sp1 = &s; <br>
+        sp2 = &g; <br>
+        sp3 = &u; <br>
+
+        sp1->GradeReport();    // runs Student's version <br>
+        sp2->GradeReport();    // runs Grad's version <br>
+        sp3->GradeReport();    // runs Undergrad's version <br>
+    </font>
+    <font size="5" color="#8b0000">Abstract Classes</font>
+</h1>
+<p>
+    In some situations the base class may be so obscure that we may not want to build
+    objects out of it. An Example being things on earth. If we are referencing dogs, things
+    on earth may be too loose of a basis to transfer any direct meaningful inheritance to the dog
+    object. Or the course example: For instance, class Student might not have enough information for
+    the full grade reports -- we need to know what kind of student (i.e. which subtype). If you do not want
+    to actually do anything in the Student's version of GradeReport, you are allowed to leave out its function
+    definition altogether.<br><br>
+    virtual void GradeReport()=0;<br><br>
+    The function shown above is giving its own definition (known as a <font color="#fafad2">pure virtual function</font>),
+    this does not have to be the case, the function may be left without an "=?", but it is often dont when the base class
+    version has essentially no work to do.
+    <br> <br>
+    Any class with one pure virtual function is known as an <font color="#fafad2">abstract class.</font> An abstract class
+    cannot be instantiated (cannot build an object of this class type). They are used as base classes for inheritance heiarchies
+    , and they are intended only as a place to put data and functions common to classes derived from them, as well as a place for
+    virtual functions. Abstract classes can still be used to build pointers, though, which is useful when taking advantage of virtual
+    functions.
+</p>
+<h1>
+    <font size="2">
+        Shape s;       // illegal declaration, since Shape is an abstract class <br>
+        Shape * sptr;  // legal declaration.  sptr may point to derived objects
+    </font> <br>
+    <a href="https://www.cs.fsu.edu/~myers/cop3330/examples/inher/employee"><font color="#ffb6c1" size="4">Employee Example:</a></font>
+</h1>
+<p>
+    This example presents a hierarchy of derived classes that is based on a class called Employee.  The goal is a program that stores
+    Employee information and handles the printing of their paychecks.  Note the use of the virtual PrintCheck function, and the building of the heterogeneous list in the sample main program.
+</p>
+
+
+
+<div style="text-anchor: end">
+    <center><button onclick="window.location.href = 'index.html';">Notes Menu</button>
+        <button onclick="window.location.href = 'menu.html';">COP Notes</button></center>
+</div>
+<br><br><br><br><br>
+</body>
+</html>
+
