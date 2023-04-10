@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bitwise</title>
+</head>
+<body style="background-color:black";>
+<<style>
+  button {
+    transition: transform .1s ease-in-out;
+  }
+  button:hover {
+    transform: scale(.9);
+  }
+  h1 {
+    font-family: Arial, sans-serif;
+    color: darkred;
+    text-align: Left;
+  }
+  h2 {
+    font-family: Arial, sans-serif;
+    color: red;
+    text-align: Left;
+  }
+  h3 {
+    font-family: Arial, sans-serif;
+    color: red;
+    text-align: Left;
+  }
+  h4 {
+    font: italic;
+    font-family: Arial, sans-serif;
+    color: orangered;
+    text-align: Left;
+
+  }
+  p {
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    text-align: left;
+  }
+  h4 {
+
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+  }
+  .highlight {
+    color: #fafad2;
+  }
+  .highlight_red {
+    color: red;
+    font: bold;
+  }
+  button {
+    background: darkred;
+    color: whitesmoke;
+    height: 70px;
+    width: 150px;
+  }
+</style>
+<body>
+<h1>
+  Bitwise Operators
+</h1>
+<p>
+  Memory is made up of bits and bytes. A
+  <text class="highlight">
+    bit
+  </text>
+  is the smallest possible unit of storage. It stores 0 or 1. Aka in binary.
+  A
+  <text class="highlight">byte</text>
+  consists of 8 bits, and it is usually the smallest unit of directly addressible storage. This means
+  that we can create variables out of it. Addresses are usually applied as bytes.
+  <br>
+  The smallest data type is char, which is on most systems only 1 byte of storage. If we want
+  to access the individual bits within the bytes. We need a
+  <text class="highlight">bitwise operator</text>
+  <br><br>
+  Bitwise operations may be machine-dependent, to an extent because of the way that bits are arranged within
+  memory. Most machines use the "2's Complement" format.
+</p>
+<h3>
+  The Bitwise operators
+</h3>
+<p>
+  & - bitwise AND - it is binary - Similar to the && but on a bit by bit basis. Bits result to 1 if corresponding operand bits are both 1, and set to
+  0 otherwise. <br> <br>
+  I - bittwise OR (inclusive) - it is binary - Similar to the || operator, but on a bit-by-bit basis.  Bits in the result set to 1 if at least one of the
+  corresponding bits in the two operands is 1.  0 otherwise. <br><br>
+  ^ - bittwise exclusive OR - it is binary - Bits in the result set to 1 if exactly one of the corresponding bits in the two operands is 1.  Result bit set
+  to 0 if both corresponding bits in operands are the same. <br><br>
+  << - left shift - binary - Shifts the bits of the first operand to the left, by the number of bits specified in the second operand.  Right fill with 0 bits.
+  <br><br>
+  >> - right shift - binary - Shifts the bits of the first operand to the right, by the number of bits specified in the second operand.  Left fill depends on the
+  machine.  Usually based on the sign (fill with 0's for positive numbers, 1's for negatives).
+  <br><br>
+  ~ - complement - unary - Flips the bits in the operand.  Similar to negation.  (All 1's become 0's, and all 0's become 1's).
+</p>
+<h3>
+  Examples
+</h3>
+<p>
+  In addition to these, there are also shortcut assignment operators, like with the arithmetic operators.<br>
+  <br><br>
+  x &= y      means x = x & y<br>
+  x |= y      means x = x | y<br>
+  x ^= y      means x = x ^ y<br>
+  x <<= y     means x = x << y<br>
+  x >>= y     means x = x >> y<br>
+  Suppose we have the following code:<br>
+  short x = 6891;<br>
+  short y = 11318;<br>
+  And let's assume that we are using a machine in which a short is 2 bytes (which is 16 bits). The binary representations of x and y, then, are:<br>
+  x:  00011010 11101011<br>
+  y:  00101100 00110110<br>
+  Suppose we did the operation (x & y). Then we perform the AND operation on the individual bits:<br>
+  x:  00011010 11101011<br>
+  y:  00101100 00110110<br>
+  --------------------------<br>
+  result:  00001000 00100010    // this is the value 2082<br>
+  <br><br>
+  Here is the bitwise OR operation (x | y):<br>
+  x:  00011010 11101011<br>
+  y:  00101100 00110110<br>
+  --------------------------
+  result:  00111110 11111111    // this is the value 16127<br>
+
+  Here is the bitwise exclusive OR operation (x ^ y):<br>
+  x:  00011010 11101011<br>
+  y:  00101100 00110110<br>
+  --------------------------<br>
+  result:  00110110 11011101    // this is the value 14045<br>
+  <br><br>
+  Here is a bitwise left shift, performed on x (x << 2):<br>
+  x:  00011010 11101011<br>
+  ---------------------------<br>
+  shifted:  01101011 10101100    // this is the value 27564<br>
+  <br><br>
+  Here is a bitwise right shift, performed on y (y >> 4):<br>
+  y:  00101100 00110110<br>
+  ---------------------------<br>
+  shifted:  00000010 11000011    // this is the value 707<br>
+  <br><br>
+
+  And here is the complement of x (~x)<br>
+  x:  00011010 11101011<br>
+  ---------------------------<br>
+  ~x:  11100101 00010100    // this is the value -6892<br>
+</p>
+</body>
+<div>
+  <br><br><br><br>
+  <center><button onclick="window.location.href = '../index.html';">Notes Menu</button>
+    <button onclick="window.location.href = 'menu.html';">COP Notes</button></center>
+</div>
+<br><br><br><br><br>
+</html>
