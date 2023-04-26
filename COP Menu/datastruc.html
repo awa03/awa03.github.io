@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C Strings</title>
+</head>
+<body style="background-color:black">
+
+<style>
+    button {
+      transition: transform .1s ease-in-out;
+    }
+    button:hover {
+      transform: scale(.9);
+    }
+    h1 {
+      font-family: Arial, sans-serif;
+      color: darkred;
+      text-align: Left;
+    }
+    h2 {
+      font-family: Arial, sans-serif;
+      color: red;
+      text-align: Left;
+    }
+    h3 {
+      font-family: Arial, sans-serif;
+      color: red;
+      text-align: Left;
+    }
+    h4 {
+      font: italic;
+      font-family: Arial, sans-serif;
+      color: orangered;
+      text-align: Left;
+  
+    }
+    p {
+      padding-right: 30px;
+      padding-bottom: 20px;
+      font-family: Arial, sans-serif;
+      color: whitesmoke;
+      text-align: left;
+    }
+    h4 {
+  
+      padding-right: 30px;
+      padding-bottom: 40px;
+      padding-left: 40px;
+      font-family: Arial, sans-serif;
+      color: whitesmoke;
+    }
+    .highlight {
+      color: #fafad2;
+    }
+    .highlight_red {
+      color: red;
+      font: bold;
+    }
+    button {
+      background: darkred;
+      color: whitesmoke;
+      height: 70px;
+      width: 150px;
+    }
+  </style>
+
+  <body>
+    <h1>Intro To Data Structures</h1>
+    <p>
+        C++ has built in methods of storing compount data in many ways.
+        Some examples include arrays and structs.
+        <br>
+        <br>
+        The most basic data structure is an array. An array is a collection of data of the same type.
+        The general concept of what a data container stores, along with gerneral operation that 
+        want that data, is an example of an abstract data type. 
+        <br>
+        <br>
+        A <b>sequence</b> is a data type that stores data in a linear order. For example, a list of names would be
+        written in a specific order, and may have duplicates. 
+        <br>
+        A <b>set</b> is a data type that stores data in a non-linear order. For example, a venn diagram is a set of data that
+        is not in a linear order. In the set of all students wearing hats, you may be wearing a hat, you may not.
+        <br>
+        <br>
+        The study of data structures is the study of how to store data in a way that is efficient for the program. There are advantages
+        of each method, and with that disadvantages. Common data structures include: stacks, queues, vectors, linked lists, trees, hash tables, sets, and others.  
+
+    </p>
+    <h3>Stacks</h3>
+    <p>
+        Stacks are abstract data types. They are a collection of data that stores data in a last in first out order.
+        This means that the last item added to the stack is the first item removed from the stack.
+        An example being a stack of plates. The last plate added to the stack is the first plate removed from the stack.
+        <br>
+        <br>
+        The stack class has two primary operations.
+        <br>
+        <b>push</b> -- adds an item onto the top of the stack<br>
+        <b>pop</b> -- removes the top item from the stack<br>
+        <br>
+        The stack class also has two secondary operations. These operations are not required for a stack, but are useful. 
+        Typical application areas are within the compiler, operating system, handling of program memory.
+
+    </p>
+    <h3>Queues</h3>
+    <p>
+        Queues are abstract data types. They are a collection of data that stores data in a first in first out order.
+        This means that the first item added to the queue is the first item removed from the queue.
+        An example being a line at a grocery store. The first person in line is the first person to be checked out.
+        <br>
+        <br>
+        The queue class has two primary operations.
+        <br>
+        <b>enqueue</b> -- adds an item onto the back of the queue<br>
+        <b>dequeue</b> -- removes the front item from the queue<br>
+        <br>
+        The queue class also has two secondary operations. These operations are not required for a queue, but are useful. 
+        Typical application areas are within print job scheduling, operating system scheduling.
+    </p>
+    <h3>Vectors</h3>
+    <p>
+        Vectors are specific implementation of the sequence/list ADT. They are a collection of data that stores data in a linear order.
+        This means that the data is stored in a linear order, and can be accessed by index.
+        An example being a list of names. The list of names is stored in a linear order, and can be accessed by index.
+        <br>
+        <br>
+        The vector class has two primary operations.
+        <br>
+        <b>push_back</b> -- adds an item onto the back of the vector<br>
+        <b>pop_back</b> -- removes the last item from the vector<br>
+        <br>
+        The vector class also has two secondary operations. These operations are not required for a vector, but are useful. 
+        Typical application areas are within the compiler, operating system, handling of program memory.
+        <br>
+        <br>
+        Vectors are made by encapsulating an array within a class (vector class).
+        <br>
+        This comes with the advantages of Random access, and dynamic memory allocation.
+        <br>
+        However, this comes with the disadvantage of having to allocate memory for the vector. Which 
+        insert and delete functions are typically slow, and may require complex shifting of data.
+    </p>
+    <h3>Linked Lists</h3>
+    <p>
+        This is a specific implementation of the sequence/list ADT. They are a collection of data that stores data in a linear order.
+        It stores a collection of adt items linked together with pointers, "lined up in a row".
+        Made up of a collection of self referential nodes. Which are created from a self-referential class.
+        This is also known as a struct.
+        <br><br>
+        <b>Self-referential class:</b> is a class who's member data contains at least one pointer
+        to an object of the same class type. Each node contains a piece of data, and a pointer to the next node.
+        <br>
+        Nodes can be anywhere in memory, and are linked together by pointers.
+        <br>
+        Nodes generally allocated dynamically, and are linked together by pointers. So they can grow to any size.
+        <br>
+        <br>
+        This is an alternative to array based storage<br>
+        <b>Advantages:</b> Dynamic memory allocation, Insertion and deletion is relativly fast. Require only the creation
+        of a new node and the changing of a few pointers.
+        <br>
+        <b>Disadvantages: </b> Random access is not possible. Must traverse the list to find the desired node.
+        Possible to build indexing into a linked list. However, this is not a standard feature.
+        <br>
+        The avantages of the array (vector) are generally disadvantages of the linked list vice versa.
+    </p>
+    <div>
+        <br><br><br><br>
+        <center><button onclick="window.location.href = '../index.html';">Notes Menu</button>
+            <button onclick="window.location.href = 'menu.html';">COP Notes</button></center>
+    </div<br><br><br><br>
+    
+
+  </body>
