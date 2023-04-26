@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ </head>
+ <style>   
+    img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+    div {
+        color: white;
+    }
+    
+    button {
+        background: lightskyblue;
+        color: white;
+        transition: transform .1s ease-in-out;
+        background-size: 100%;
+    }
+    
+    button:hover {
+        background: blue;
+        transform: scaleY(1.9);
+        transform: scaleX(1.2);
+    }
+    body {
+    width:100%;
+    background:darkslategrey;
+    }
+@font-face {
+    font-family: 'ExquisiteCorpse';
+    src: url('http://ashandrien.com/fonts/exquisitecorpse.eot');
+    src: url('http://ashandrien.com/fonts/exquisitecorpse.eot?#iefix') format('embedded-opentype'),
+         url('http://ashandrien.com/fonts/exquisitecorpse.woff') format('woff'),
+         url('http://ashandrien.com/fonts/exquisitecorpse.ttf') format('truetype'),
+         url('http://ashandrien.com/fonts/exquisitecorpse.svg#exquisitecorpse') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1 {
+  font-family:'ExquisiteCorpse', Jokerman, Marker Felt;
+  font-color:white;
+  margin:100px left;
+  
+  width:25%;
+  font-size:5em;
+  transition:all 3s ease-in-out;
+	-webkit-transition:all 3s ease-in-out;
+	-moz-transition:all 3s ease-in-out;
+  -o-transition:all 15s ease-in-out;
+  color:white;
+  text-shadow: 0px 0px 5px #888;
+}
+h1.dead-dude:hover {
+  text-shadow: 0px 1px red,0px 2px red, 0px 3px red, 0px 4px red, 0px 5px red, 0px 6px red, 0px 7px red, 0px 8px red, 0px 9px red, 0px 10px red, 0px 11px red, 0px 12px red, 0px 13px red, 0px 14px red, 0px 15px red, 0px 16px red, 0px 17px red, 0px 18px red, 0px 19px red, 0px 20px red, 0px 21px red, 0px 22px red, 0px 23px red, 0px 24px red, 0px 25px red, 0px 26px red, 0px 27px red, 0px 28px red, 0px 29px red, 0px 30px red, 0px 31px red, 0px 32px red, 0px 33px red, 0px 34px red, 0px 35px red, 0px 36px red, 0px 37px red, 0px 38px red, 0px 39px red, 0px 40px red, 0px 41px red, 0px 42px red, 0px 43px red, 0px 44px red, 0px 45px red, 0px 46px red, 0px 47px red, 0px 48px red, 0px 49px red, 0px 50px red, 0px 51px red,0px 52px red, 0px 53px red, 0px 54px red, 0px 55px red, 0px 56px red, 0px 57px red, 0px 58px red, 0px 59px red, 0px 60px red, 0px 61px red, 0px 62px red, 0px 63px red, 0px 64px red, 0px 65px red, 0px 66px red, 0px 67px red, 0px 68px red, 0px 69px red, 0px 70px red, 0px 71px red, 0px 72px red, 0px 73px red, 0px 74px red, 0px 75px red, 0px 76px red, 0px 77px red, 0px 78px red, 0px 79px red, 0px 80px red, 0px 81px red, 0px 82px red, 0px 83px red, 0px 84px red, 0px 85px red, 0px 86px red, 0px 87px red, 0px 88px red, 0px 89px red, 0px 90px red, 0px 91px red, 0px 92px red, 0px 93px red, 0px 94px red, 0px 95px red, 0px 96px red, 0px 97px red, 0px 98px red, 0px 99px red, 0px 100px red, 0px 101px red,0px 102px red, 0px 103px red, 0px 104px red, 0px 105px red, 0px 106px red, 0px 107px red, 0px 108px red, 0px 109px red, 0px 110px red, 0px 111px red, 0px 112px red, 0px 113px red, 0px 114px red, 0px 115px red, 0px 116px red, 0px 117px red, 0px 118px red, 0px 119px red, 0px 120px red, 0px 121px red, 0px 122px red, 0px 123px red, 0px 124px red, 0px 125px red, 0px 126px red, 0px 127px red, 0px 128px red, 0px 129px red, 0px 130px red, 0px 131px red, 0px 132px red, 0px 133px red, 0px 134px red, 0px 135px red, 0px 36px red, 0px 37px red, 0px 38px red, 0px 39px red, 0px 40px red, 0px 41px red, 0px 142px red, 0px 143px red, 0px 144px red, 0px 145px red, 0px 146px red, 0px 147px red, 0px 148px red, 0px 149px red, 0px 150px red, 0px 151px red,0px 152px red, 0px 153px red, 0px 154px red, 0px 155px red, 0px 156px red, 0px 157px red, 0px 158px red, 0px 159px red, 0px 160px red, 0px 161px red, 0px 162px red, 0px 163px red, 0px 164px red, 0px 165px red, 0px 166px red, 0px 167px red, 0px 168px red, 0px 169px red, 0px 170px red, 0px 171px red, 0px 172px red, 0px 173px red, 0px 174px red, 0px 175px red, 0px 176px red, 0px 177px red, 0px 178px red, 0px 179px red, 0px 180px red, 0px 181px red, 0px 182px red, 0px 183px red, 0px 184px red, 0px 185px red, 0px 186px red, 0px 187px red, 0px 188px red, 0px 189px red, 0px 190px red, 0px 191px red, 0px 192px red, 0px 193px red, 0px 194px red, 0px 195px red, 0px 196px red, 0px 197px red, 0px 198px red, 0px 199px red;
+}
+.c {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .button {
+        background-color:darkcyan;
+        color: white;
+        text-align: center;
+        table-layout: fixed;
+        border-collapse: collapse;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        height: 70px;
+        border-width: 5px;
+        border-color: black;
+        border-style: solid;
+        width: 190px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .toggle .answer {
+  display: none;
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 10px;
+}
+
+.toggle-btn {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.toggle-btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.toggle-btn:focus {
+  outline: none;
+}
+
+
+h3 {
+        color: white;
+        
+        font-family: 'ExquisiteCorpse';
+        font-size: 30px;
+    }
+    p {
+        font-family: Arial, sans-serif;
+        color: whitesmoke;
+    }
+</style>
+<body>
+
+
+
+    <ul class="header">
+        <h1>Earthquakes</h1>
+    </ul>
+    <img align="right" src="assets/earthquake.png" height="200px" width="200px">
+    <h3>What you should know</h3>
+    <p>
+        What is a fault? <br>
+        Fault types - normal, reverse, strike-slip <br>
+        Theory of elastic rebound - how earthquakes occur <br>
+        Earthquake waves - P, S, surface waves <br>
+        How to locate an earthquake - Travel time curves and three station method<br>
+
+    </p>
+    <h3>What Is an Earthquake?</h3>
+    <p>
+        Earth shaking is caused by a rapid release of energy. Due to tectonic stresses that cause rocks
+        to break. Energy moves outtward as seismic waves... <br>
+        Earthquakes destroy buildings and kill people - 3.5 million people killed in the 20th century <br>
+    </p>
+    <h3>Seismicity</h3>
+    <p>
+        Seismicity occurs due to... <br>
+        - Motion along a newly formed crustal fracture (fault). <br>
+        - Motion on an existing fault <br>
+        - Volcanic eruptions <br>
+        - Massive landslides <br>
+        - Meteorite impacts <br>
+        <br>
+        <b>"Most Earthquakes occur along faults"</b>
+        - The amount of movement that an earthquake has is known as displacement. <br>
+        - The point on the fault where the earthquake begins is called the focus. <br>
+        - The point on the surface directly above the focus is called the epicenter. <br>
+        - The fault plane is the surface of the fault where motion occurs. <br>
+        <br><br>
+        Faults are like planar breaks in blocks of crust. Most faults slope, although some are vertical. <br>
+        Fault type is based on relative block motions. <br>
+        A reverse fault is a hanging wall that goes up relative to the footwall. <br>
+        A normal fault is a hanging wall that goes down relative to the footwall. <br>
+    </p>
+    <h3>More Faults</h3>
+    <p>
+        Thrust fault - special kind of reverse fault<br>
+        - Fault dips less than 45 degrees <br>
+        - Associated with compressional forces <br>
+        <br>
+        Strike-slip fault <br>
+        - Motion is horizontal <br>
+        - Associated with shear forces <br>
+        <br>
+        Oblique-slip fault <br>
+        - Motion is both horizontal and vertical <br>
+        <br>
+        Faults are commonplace within the crust.
+        Active faults - ongoing struss produce motion.
+        Inactive faults - no motion for a long time.
+        Displacement - amount of movement that occurs along a fault.
+        Fault trace - surface expression of a fault.
+        Fault scarp - small step on the ground surface where one side of a fault has moved vertically with respect to the other.
+        Fault creep - slow, gradual displacement.
+        <br><br>
+        Tectonic forces add stress to unbroken rocks.
+        The rock deforms slightly (elastic strain).
+        Continued stress will cause growth of cracks.
+        Eventually, the rock will break (rupture).
+        The rock will snap back to its original shape (elastic rebound).
+        When the rock breaks, elastic strain transformes into brittle
+        deformation and seismic waves.
+    </p>
+    <h3>Earthquake Waves</h3>
+    <p>
+        When rocks break, elatic strain is released. This energy radiates
+        outwards from the hypocenter as waves, generating vibrations. Foreshock
+        and aftershocks are common. <br>
+        <br>
+        Body waves - travel through the interior of the Earth. <br>
+        - P waves - compressional or primary waves. <br>
+        > Push-Pull motion <br>
+        > Travel through solids, liquids, and gases <br>
+        > Fastest seismic waves <br>
+        - S waves - shear or secondary waves. <br>
+        > Shake motion <br>
+        > Travel only through solids <br>
+        > Slower than P waves <br>
+        <br>
+        Surface waves - travel along the Earth's surface. <br>
+        - Love waves (L-waves) - side to side motion <br>
+        - Rayleigh waves (R-waves) - rolling motion <br>
+        <br> <br>
+        Pass through the Earth's interior. <br>
+        - P-waves <br>
+        - S-waves <br>
+        <br>
+        Surface waves travel along the Earth's surface. <br>
+        - Love waves (L-waves) <br>
+        - Rayleigh waves (R-waves) <br>
+        <br>
+        Seismographs record seismic waves. <br>
+        - Seismograms are the records of seismic waves. <br>
+        - Seismograms are used to determine the location of an earthquake. <br>
+        - Seismograms are used to determine the size of an earthquake. <br>
+        <br>
+        Waves always arrive in sequence, P-waves 1st, S-waves 2nd, Surface waves last. <br>
+    </p>
+    <h3>
+        Earthquake Size
+    </h3>
+    <p>
+        magnitude - measure of the amount of energy released. <br>
+        intensity - measure of the amount of ground shaking. <br>
+        <br> <br>
+        Earthquakes are linked to plate tectonics. Shallow earthquakes occur at divergent and transform plate boundaries.
+        Intermediate and deep earthquakes occur at convergent plate boundaries. <br>
+        <br>
+        <b>Shallow - 0-20km</b> occur alon the mid-ocean ridge, transform boundaries, shallow part of trenches, and continental crust.
+        <b>Intermediate - Deep</b> occur in the Wadati-Benioff zone. Intermediate 20 to 300km
+        Deep 300 to 700km. <br>
+        <br>
+    </p>
+    <h3>
+        Continental Earthquakes
+    </h3>
+    <p>
+        - Continental transform faults (San, Andreas, Alpine)<br>    
+        - Continental rifts (Basin and Range, East African Rift)<br>
+        - Continental collisions (Himalayas, Alps)<br>
+        - Intraplate earthquakes (ancient crustal weakness)<br>
+        <br>
+        The san Andreas fault meets the North American plate. It is a very active 
+        strike-slip fault. Hundreds of Earthquakes a year. <br>
+        <br>
+        Intraplate earthquakes occur within a plate. They are not well understood.
+    </p>
+    <h3>
+        Earthquake Damage
+    </h3>
+    <p>
+        Ground shaking and displacement . P-waves are the first to arrive, and they move 
+        rapidly up and down. S-waves are the second to arrive, and they move side to side.
+        The s waves are stronger and can cause extensive damage. Surface waves lag behind, and 
+        writhes like a snake. R waves are the last to arrive. The land surface ripples ripples 
+        in a pond. <br>
+    </p>
+
+    <br><br>
+    <ul class="header">
+        <h1>Tsunami's</h1>
+    </ul>
+
+
+    <p>
+        Tsunami's are large ocean waves generated by earthquakes or volcanic eruptions. <br>
+        Tsunami's are not tidal waves. <br>
+        Tsunami's are not caused by storms. <br>
+        Tsunami's are not surfable waves. <br>
+        <br>
+        Tsunami's are generated by vertical displacement of the seafloor. They travel at high speeds
+        across the ocean. They are almost inperceptible in the open ocean. - low wave height, long wavelength.
+        As water shallows they grow in height. They reach 10-15m or more.
+        <br><br>
+        Long term warning systems are in place. They work by detecting earthquakes and measuring sea level changes.
+
+        <img align="right" src="assets/wave.png" height="230px" width="200px">
+    </p>
+    
+        <h3>Summary: </h3>
+    <p>
+        A tsunami is a series of ocean waves with very long wavelengths (typically several hundred kilometers) and long periods (typically 10 to 60 minutes) that can cause widespread destruction when they hit coastlines. Tsunamis are typically generated by undersea earthquakes, volcanic eruptions, landslides, or meteorite impacts that displace large volumes of water.
+
+        When a tsunami is generated, the initial wave may be only a few centimeters high, but as it travels across the ocean, its energy is dispersed over a wider area, causing the wave to increase in height. In deep water, tsunamis can travel at speeds of up to 800 km/h (500 mph), but their height is usually less than one meter. As the tsunami approaches shallow water near the coast, however, its speed decreases and its height increases dramatically. The height of a tsunami wave can be tens of meters or more, depending on the size and strength of the tsunami.
+        
+        The impact of a tsunami on a coastline can be devastating, with the potential to cause widespread destruction and loss of life. The first wave of a tsunami is often not the largest, and subsequent waves may be even more powerful, making it difficult for people to evacuate in time. Tsunamis can cause extensive flooding, damage to buildings and infrastructure, and erosion of beaches and shorelines. They can also cause secondary hazards such as fires, landslides, and contaminated water supplies.
+        
+        To mitigate the impact of tsunamis, warning systems have been established in many coastal regions to provide advance notice of potential tsunamis. These warning systems use data from seismic sensors, ocean buoys, and other sources to detect earthquakes and other events that could generate tsunamis, and provide alerts to coastal communities to evacuate or take other protective measures. Coastal communities may also have tsunami evacuation routes and emergency shelters in place to help people evacuate quickly and safely.
+        
+        In summary, a tsunami is a powerful ocean wave that can cause widespread destruction when it hits a coastline. The potential impact of a tsunami on coastal communities underscores the importance of preparedness and effective warning systems to help mitigate the effects of these devastating events.
+        
+    </p>
+
+
+
+    <ul class="header">
+        <center>
+        <h1 style="color: darkslategray; font-family: Arial, Helvetica, sans-serif;" >Quiz</h1>
+        </center>
+    </ul>
+
+    <p>1. Compare normal, reverse, and strike-slip faults.</p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">Normal faults occur when the hanging wall drops down relative to the footwall. Reverse faults occur when the hanging wall is pushed up relative to the footwall. Strike-slip faults occur when the two sides of the fault move horizontally past each other.</p>
+    </details>
+
+    <p>2. Describe elastic rebound theory and the concept of stick-slip behavior.</p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">Elastic rebound theory explains how energy is released during an earthquake as two plates stick together, causing strain to build up in the rocks until they reach their breaking point and snap, releasing energy. Stick-slip behavior refers to the process of the plates sticking together and then slipping suddenly, causing an earthquake.</p>
+    </details>
+
+    <p>3. Describe the motions of the four types of seismic waves. Which are body waves,
+        and which are surface waves?</p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">P-waves and S-waves are body waves that travel through the earth's interior, while Rayleigh and Love waves are surface waves that move along the surface. P-waves are compressional waves, S-waves are shear waves, Rayleigh waves move in a rolling motion, and Love waves move side to side.</p>
+    </details>
+
+    <p>4. On the seismogram of an earthquake recorded at a seismic station in Paris, the S-
+        wave arrives 6 minutes after the P-wave. On the seismogram obtained by a
+        station in Mumbai for the same earthquake, the difference between the P-wave
+        and S-wave arrival times is 4 minutes. Which station is closer to the epicenter?
+        From the information provided, can you pinpoint the location of the epicenter?
+        Explain.</p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">The station in Mumbai is closer to the epicenter because the time difference between the P-wave and S-wave is less. However, without more data from additional seismic stations, it is not possible to pinpoint the exact location of the epicenter.</p>
+    </details>
+
+    <p>5. Explain the contrasts among the different scales used to describe the size of an
+        earthquake.</p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">Different scales used to describe the size of an earthquake include the Richter scale, moment magnitude scale, and Mercalli intensity scale. The Richter scale measures the amplitude of the largest seismic wave, while the moment magnitude scale measures the total energy released by an earthquake. The Mercalli intensity scale measures the effects of an earthquake on people, buildings, and the environment.</p>
+    </details>
+
+    <p>6. How does seismicity on mid-ocean ridges compare with seismicity at convergent
+        or transform boundaries? Do all earthquakes occur at plate boundaries?</p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">Seismicity on mid-ocean ridges is generally lower than seismicity at convergent or transform boundaries. However, not all earthquakes occur at plate boundaries, as earthquakes can also occur within plates.</p>
+    </details>
+
+    <p>7. Is seismic risk greater in a town on the west coast of South America than on the
+        east coast? Explain your answer</p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">Seismic risk is generally greater on the west coast of South America than on the east coast, as the west coast is located along a subduction zone where large earthquakes are common.</p>
+    </details>
+
+    <p>8. What is a tsunami, and why does it form?</p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">A tsunami is a large ocean wave caused by an earthquake, volcanic eruption, or landslide. It forms when a large amount of water is displaced suddenly, creating a wave that can travel across entire ocean basins.</p>
+    </details>
+
+    <p>9. Explain how liquefaction occurs in an earthquake, and how it can cause damage.</p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">Liquefaction occurs when water-saturated soil loses its strength and stiffness during an earthquake, causing it to behave like a liquid. This can cause damage to buildings and other structures built on top of the soil.</p>
+    </details>
+
+    <p>10. How are long-term and short-term earthquake predictions made? What is the
+        basis for determining a recurrence interval, and what does a recurrence interval
+        mean? </p>
+    <details>
+        <summary style="color:dodgerblue" >Answer</summary>
+        <p style="border-width: 5px;color: black;background: dodgerblue; border-style: solid; border-color: black; text-align: left">Short-term earthquake predictions are made based on changes in seismic activity and other factors that suggest an earthquake may be imminent. Long-term earthquake predictions are made by estimating the likelihood of earthquakes based on historical patterns of seismic activity. Recurrence intervals are based on the average time between earthquakes of a certain size, and can help estimate the likelihood of future earthquakes in a particular area.</p>
+    </details>
+
+
+
+    <br><br>
+    <center>
+    <button onclick="window.location.href = 'escmenu.html';" class="button">ESC Menu</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="window.location.href = '../index.html';" class="button">Main Menu</button>
+    </center>
+    
+      
+    <br><br><br><br>
+    <script>
+    
+        let toggle = (id) => {
+        let element = document.getElementById(id);
+        let hidden = element.getAttribute("hidden");
+            
+        if (hidden) {
+            element.removeAttribute("hidden");
+        } else {
+            element.setAttribute("hidden", "hidden");
+        }
+    }
+    
+        
+    </script>
+</body>
