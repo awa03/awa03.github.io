@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ </head>
+ <style>   
+    div {
+        color: white;
+        
+    }
+    summary{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    p{
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+    li{
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    
+    button {        
+        background: lightskyblue;
+        color: white;
+        transition: transform .1s ease-in-out;
+        background-size: 100%;
+    }
+    
+    button:hover {
+        background: darkorange;
+        transform: scaleY(1.9);
+        transform: scaleX(1.2);
+    }
+    body {
+    width:100%;
+    background:black;
+    }
+@font-face {
+    font-family: 'ExquisiteCorpse';
+    src: url('http://ashandrien.com/fonts/exquisitecorpse.eot');
+    src: url('http://ashandrien.com/fonts/exquisitecorpse.eot?#iefix') format('embedded-opentype'),
+         url('http://ashandrien.com/fonts/exquisitecorpse.woff') format('woff'),
+         url('http://ashandrien.com/fonts/exquisitecorpse.ttf') format('truetype'),
+         url('http://ashandrien.com/fonts/exquisitecorpse.svg#exquisitecorpse') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1 {
+  font-family:'ExquisiteCorpse', Jokerman, Marker Felt;
+  font-color:white;
+  margin:100px left;
+  
+  width:25%;
+  font-size:5em;
+  transition:all 3s ease-in-out;
+	-webkit-transition:all 3s ease-in-out;
+	-moz-transition:all 3s ease-in-out;
+  -o-transition:all 15s ease-in-out;
+  color:white;
+  text-shadow: 0px 0px 5px #888;
+}
+
+.c {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .button {
+        background-color:red;
+        color: white;
+        text-align: center;
+        table-layout: fixed;
+        border-collapse: collapse;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        height: 70px;
+        border-width: 5px;
+        border-color: black;
+        border-style: solid;
+        width: 190px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .toggle .answer {
+  display: none;
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  background: red;
+  color: darkred;
+  font-size: 10px;
+}
+.break {
+  padding: 20px;
+  text-align: center;
+  background: red;
+  color: darkred;
+  font-size: 10px;
+}
+
+.toggle-btn {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.toggle-btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.toggle-btn:focus {
+  outline: none;
+}
+
+
+h3 {
+        color: white;
+        
+        font-family: 'ExquisiteCorpse';
+        font-size: 30px;
+    }
+    p {
+        font-family: Arial, sans-serif;
+        color: whitesmoke;
+    }
+</style>
+<body>
+
+    <ul class="header">
+        
+        <h1 style="color: black; font-family: Arial, Helvetica, sans-serif;" >Exam Review</h1>
+    </ul>
+    <p>Review For ESC 1000, questions provied by Florida State University</p>
+
+    <h3>
+        <ul class="break">
+        </ul>
+        Chapter 7: Sedimentary Rocks
+        <ul class="break">
+        </ul>
+    </h3>
+
+    <!--
+        Question # 1
+    -->
+    <p>
+        1. Be aware that, although rare in the crust as a whole, sediments and sedimentary rocks dominate solid Earth
+        materials at the surface.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Sediments and sedimentary rocks are the most abundant materials at the Earth's surface. Sedimentary rocks are formed by the accumulation and lithification of sedimentary particles such as sand, clay, and organic matter. These particles are transported and deposited by water, wind, ice, or gravity, and then they undergo compaction and cementation to form sedimentary rocks.
+
+            Sedimentary rocks cover approximately 75% of the Earth's surface, and they are important resources for oil, gas, and groundwater. They also provide a record of Earth's history and the evolution of life, as fossils are often found in sedimentary rocks. Despite their importance, sedimentary rocks are relatively rare in the Earth's crust as a whole, which is dominated by igneous and metamorphic rocks.</p>
+    </details>
+
+    <!--
+        Question # 2
+    -->
+    <p>
+        2. Be familiar with the sedimentary portion of the rock cycle, understanding physical and chemical weathering,
+        erosion, transport, deposition, burial, and diagenesis.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">The sedimentary portion of the rock cycle involves the transformation of rocks, sediments, and organic matter into sedimentary rocks through weathering, erosion, transport, deposition, burial, and diagenesis. Weathering breaks down rocks into smaller particles, erosion transports the particles, deposition settles the particles in a new location, burial occurs when sediment is buried under additional layers, and diagenesis transforms the sediment into solid rock through compaction and cementation. This process can repeat itself over millions of years.
+        </p>
+    </details>
+
+    <!--
+        Question # 3
+    -->
+    <p>
+        3. Be able to distinguish among coarse-, medium- (sand), and fine-sized grains and to evaluate sorting, sphericity,
+and     angularity among sediments and rocks.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Coarse-, medium- (sand), and fine-sized grains can be distinguished based on their size. Sorting refers to the similarity in size and shape of sediment grains within a sedimentary rock, sphericity refers to the roundness of the grains, and angularity refers to the sharpness of the grains.
+        </p>
+    </details>
+
+     <!--
+        Question # 4
+    -->
+    <p>
+        4. Be aware of what distinguishes soil from loose sediment; the typical soil profile: O, A, B, and C horizons; and
+how     these layers are distinguished.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Soil differs from loose sediment in that it contains organic matter and supports plant life. The typical soil profile includes O, A, B, and C horizons, which are distinguished based on the composition and physical properties of the soil layers.
+        </p>
+    </details>
+
+     <!--
+        Question # 5
+    -->
+    <p>
+        5. Be aware of different types of sedimentary rocks (clastic, biochemical, organic, and chemical sedimentary
+        rocks). <br>
+        • Clastic sedimentary rocks are primarily classified on the basis of grain size and shape. Students should be
+        able to recognize and characterize conglomerate, breccia, sandstone, siltstone, mudstone, and shale.
+        <br>
+        • Biologically catalyzed precipitation produces mineralized skeletons; these condense and lithify to form
+        biochemical sedimentary rocks. Important examples are most limestones and bedded, biogenic cherts.
+        <br>
+        • Organic sedimentary rocks (the coal series) consist of the altered remains of trees and other plants that lived
+        in boggy environments (which allow organic matter to accumulate without too much decay).
+        <br>
+        • Chemical sedimentary rocks arise from physically induced precipitation. As with biochemical rocks,
+        classification is primarily on the basis of mineral content. Evaporites are an important subset of chemical
+        sedimentary rocks and include rock salt (halite) and gypsum (small amounts of carbonate sediment can also
+        form through evaporation). Chemical rocks can also form through the replacement of minerals during
+        diagenesis; important replacement minerals include quartz (forming the rock called chert) and dolomite
+        (forming dolostone).
+        <br>
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Sedimentary rocks are classified into four types: clastic, biochemical, organic, and chemical sedimentary rocks. Clastic rocks are primarily classified based on grain size and shape. Biogenic and organic sedimentary rocks form from the accumulation and lithification of mineralized skeletons or organic matter. Chemical sedimentary rocks form through the precipitation of minerals.
+        </p>
+    </details>
+
+     <!--
+        Question # 6
+    -->
+    <p>
+        6. Be aware of common sedimentary structures. The layering of rock is termed stratification (or bedding); cross
+        beds signify deposition along a slope and can be used to indicate paleocurrent direction. Other features of
+        interest within sedimentary rocks include fossils, ripple marks, and mud cracks.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Sedimentary structures include stratification (or bedding), cross beds (indicating paleocurrent direction), fossils, ripple marks, and mud cracks.
+        </p>
+    </details>
+
+     <!--
+        Question # 7
+    -->
+    <p>
+        7. Be aware that the character of sedimentary rocks reflects their environments of deposition; be familiar with a
+        few sedimentary environments (e.g., alluvial fan, fluvial, shallow marine, deep marine, glacial) and
+        characteristics of the sediments deposited in these realms. Locally, environments change over time; one
+        source of these changes is the sequence of transgressions (rising local relative sea level) and regressions
+        (falling local relative sea level).
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">The characteristics of sedimentary rocks reflect their environments of deposition, and sedimentary environments can vary from alluvial fan to deep marine. Changes in sedimentary environments can occur due to rising and falling sea levels.
+        </p>
+    </details>
+
+    <h3>
+        Chapter 7: Readings
+    </h3>
+    <p>
+        Sediment consists of detritus (mineral grains and rock fragments derived from preexisting rock), mineral
+        crystals that precipitate directly out of water, and shells (formed when organisms extract ions from water).
+        Rocks at the surface of Earth undergo physical and chemical weathering. During physical weathering, intact
+        rock breaks into pieces. During chemical weathering, rocks react with water and air to produce new minerals
+        such as clay and ions in solution.
+        The covering of loose rock fragments, sand, gravel, and soil at Earth’s surface is regolith. Soil differs from other
+        types of regolith in that it has been changed by activities of organisms, by downward-percolation rainwater, and
+        by the mixing of organic matter.
+        Distinct horizons can be recognized in soil. The type of soil that forms depends on climate and source material.
+        Geologists recognize four major classes of sedimentary rocks. Clastic (detrital) rocks form from cemented-
+        together detritus (grains or rock fragments that were first produced by weathering, then were transported,
+        deposited, and lithified). Biochemical rocks develop from the shells of organisms. Organic rocks consist of
+        2
+        altered plant debris or of altered plankton remains. Chemical rocks, such as evaporites, precipitate directly from
+        water.
+        Sedimentary structures include features such as bedding, cross bedding, graded bedding, ripple marks, and
+        dunes. Their presence provides clues to depositional settings.
+        Glaciers, mountain streams and fronts, sand dunes, lakes, rivers, deltas, beaches, shallow seas, and deep seas
+        each accumulate a different sedimentary facies, a set of sedimentary rocks and structures. Thus, by studying
+        sedimentary rocks, we can reconstruct the characteristics of past environments.
+        Thick piles of sedimentary rocks accumulate in sedimentary basins, regions where the lithosphere sinks, creating
+        a depression at Earth’s surface. Basins form where the lithosphere has been loaded by a weight or where it has
+        undergone stretching.
+        The sea level changes with time. Transgressions occur when the seal level rises and the coastline migrates
+        inland. Regressions occur when the sea level falls and the coastline migrates seaward.
+    
+    </p>
+    <h3>
+        Chapter 7: Review Questions
+    </h3>
+
+    <!--
+        Question # 1
+    --> 
+    <p>
+        1. How does physical weathering differ from chemical weathering?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Physical weathering is the breakdown of rocks into smaller pieces without any chemical changes in the composition of the rock, whereas chemical weathering involves the breakdown of rocks due to chemical reactions with substances such as water, oxygen, and acids.
+        </p>
+    </details>
+
+    <!--
+        Question # 2
+    --> 
+    <p>
+        2. Feldspars are among the most common minerals in igneous rocks, but they are relatively rare in sediments.
+        Why are they more susceptible to weathering and what common sedimentary minerals are produced from
+        weathered feldspar?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Feldspars are more susceptible to chemical weathering due to their chemical composition. They are weathered to produce clay minerals such as kaolinite, illite, and smectite.
+        </p>
+    </details>
+
+    <!--
+        Question # 3
+    --> 
+    <p>
+        3. What kind of minerals tends to weather more quickly?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Minerals that are more soluble or reactive tend to weather more quickly. For example, calcite and feldspars are more susceptible to weathering than quartz
+        </p>
+    </details>
+
+    <!--
+        Question # 4
+    --> 
+    <p>
+        4. Describe the different horizons in a typical soil profile.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">A typical soil profile consists of four layers or horizons: O horizon (organic matter and leaf litter), A horizon (topsoil), B horizon (subsoil), and C horizon (parent material).
+        </p>
+    </details>
+
+    <!--
+        Question # 5
+    --> 
+    <p>
+        5. What factors determine the nature of soils in different regions?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">The nature of soils in different regions is determined by factors such as climate, topography, geology, and vegetation.
+        </p>
+    </details>
+
+    <!--
+        Question # 6
+    --> 
+    <p>
+        6. Describe how a clastic sedimentary rock is formed from its unweathered parent rock.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Clastic sedimentary rocks are formed from the weathered products of pre-existing rocks. The weathered material is transported, deposited, and lithified to form a new rock.
+        </p>
+    </details>
+
+    <!--
+        Question # 7
+    --> 
+    <p>
+        7. Clastic and chemical sedimentary rocks are both made of material that has been transported. How are they
+        different?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Clastic sedimentary rocks are made up of fragments of pre-existing rocks that have been transported and deposited, while chemical sedimentary rocks are formed from the precipitation of dissolved minerals from water.
+        </p>
+    </details>
+
+    <!--
+        Question # 8
+    --> 
+    <p>
+        8. Explain how biochemical sedimentary rocks form.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Biochemical sedimentary rocks form from the remains of living organisms that accumulate and are then lithified. Examples include limestone and coal.
+        </p>
+    </details>
+
+    <!--
+        Question # 9
+    --> 
+    <p>
+       9. Describe how grain size and shape, sorting, sphericity, and angularity change as sediments move downstream.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Grain size tends to decrease downstream, and sediment becomes more well-sorted and rounded due to abrasion during transport.
+        </p>
+    </details>
+
+    <!--
+        Question # 10
+    --> 
+    <p>
+        10. Describe how cross beds form. How can you read the current direction from cross beds?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Cross beds form when sediment is deposited at an angle to the horizontal surface, often due to current flow. The current direction can be determined by looking at the direction of the inclined layers.
+        </p>
+    </details>
+
+    <!--
+        Question # 11
+    --> 
+    <p>
+       11. Describe how a turbidity current forms and moves. How does it produce graded bedding?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">A turbidity current is a sediment-laden current that flows downhill under the influence of gravity. It produces graded bedding because the heaviest sediment settles first and the finest sediment settles last.
+        </p>
+    </details>
+
+    <!--
+        Question # 12
+    --> 
+    <p>
+        12. Compare the deposits of an alluvial fan with those of a typical river environment and with those of a deep-
+        marine deposit.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Alluvial fan deposits tend to be coarse-grained and poorly sorted, while river deposits tend to be better sorted and finer-grained. Deep marine deposits tend to be very fine-grained and well-sorted.
+        </p>
+    </details>
+
+    <!--
+        Question # 13
+    --> 
+    <p>
+        13. What happens during diagenesis, and how does diagenesis differ from metamorphism?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Diagenesis is the process by which sediment is lithified into sedimentary rock. It involves compaction, cementation, and other physical and chemical changes. Diagenesis differs from metamorphism in that it occurs at lower temperatures and pressures and does not involve recrystallization.
+        </p>
+    </details>
+
+    <br><br><br>
+    <h3>
+        <ul class="break">
+        </ul>
+        Chapter 8: Metamorphism and Metamorphic Rocks
+        <ul class="break">
+        </ul>
+    </h3>
+
+
+    <!--
+        Question # 1
+    --> 
+    <p>
+        1. Metamorphic rocks form under conditions of high heat and pressure, and are distinct from chemical weathering and low-temperature diagenesis. Chemical weathering occurs at the Earth's surface and low-temperature diagenesis occurs at shallow depths.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Metamorphic rocks form under conditions of high heat and pressure, and are distinct from chemical weathering and low-temperature diagenesis. Chemical weathering occurs at the Earth's surface and low-temperature diagenesis occurs at shallow depths.
+        </p>
+    </details>
+
+     <!--
+        Question # 2
+    --> 
+    <p>
+        2. There are different environments of metamorphic rock formation, including regional (dynamothermal), thermal (contact), dynamic (fault zone/shear zone), burial, hydrothermal, and shock. Some environments yield both foliated and nonfoliated rocks, while others only produce nonfoliated rocks.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">There are different environments of metamorphic rock formation, including regional (dynamothermal), thermal (contact), dynamic (fault zone/shear zone), burial, hydrothermal, and shock. Some environments yield both foliated and nonfoliated rocks, while others only produce nonfoliated rocks.
+        </p>
+    </details>
+
+     <!--
+        Question # 3
+    --> 
+    <p>
+        3. Metamorphism is induced by heat, pressure, and differential stress. Heat can come from burial or contact with hot rock/water, while pressure increases with depth. Differential stress arises during orogenesis or at fault zones.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Metamorphism is induced by heat, pressure, and differential stress. Heat can come from burial or contact with hot rock/water, while pressure increases with depth. Differential stress arises during orogenesis or at fault zones.
+        </p>
+    </details>
+
+     <!--
+        Question # 4
+    --> 
+    <p>
+        4. Metamorphic effects include recrystallization, changes in mineral stability, and foliation. Foliation is the development of planar fabric due to preferred orientation of inequant grains or preferred mineral associations.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Metamorphic effects include recrystallization, changes in mineral stability, and foliation. Foliation is the development of planar fabric due to preferred orientation of inequant grains or preferred mineral associations.
+        </p>
+    </details>
+
+     <!--
+        Question # 5
+    --> 
+    <p>
+        5. Nonfoliated metamorphic rocks include quartzite and marble, while the slate-phyllite-schist-gneiss series represents foliated rocks with increasing metamorphic grade. Slate has a slaty cleavage, phyllite has a shiny cleavage, schist has visible mica or other minerals, and gneiss has compositional banding.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Nonfoliated metamorphic rocks include quartzite and marble, while the slate-phyllite-schist-gneiss series represents foliated rocks with increasing metamorphic grade. Slate has a slaty cleavage, phyllite has a shiny cleavage, schist has visible mica or other minerals, and gneiss has compositional banding.
+        </p>
+    </details>
+
+     <!--
+        Question # 6
+    --> 
+    <p>
+        6. Metamorphic grade refers to the intensity of metamorphism and is related to the temperature and pressure conditions. High-grade rocks form at high temperatures (and pressures), while low-grade rocks are produced at lower temperatures (and pressures).
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Metamorphic grade refers to the intensity of metamorphism and is related to the temperature and pressure conditions. High-grade rocks form at high temperatures (and pressures), while low-grade rocks are produced at lower temperatures (and pressures).
+        </p>
+    </details>
+
+    <!--
+        Question # 7
+    --> 
+    <p>
+        7. Understand that protoliths affected by metamorphism can be of any type (igneous, sedimentary, or
+        metamorphic). Alteration of metamorphics to produce higher-grade rocks is termed prograde metamorphism;
+        the reverse process is termed retrograde metamorphism.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Metamorphism can affect any type of protolith, including igneous, sedimentary, and metamorphic rocks. Prograde metamorphism alters rocks to higher grades, while retrograde metamorphism reverses the process.
+        </p>
+    </details>
+
+    <h3>
+        Chapter 8: Reading
+    </h3>
+    <p>
+        Metamorphism refers to changes in a rock that result in the formation of a metamorphic mineral assemblage or a
+        metamorphic foliation in response to change in temperature or pressure, to the application of differential stress,
+        and to interaction with hydrothermal fluids.
+        Metamorphism involves recrystallization, neocrystallization, phase changes, pressure solution, or plastic
+        deformation. If hot-water solutions bring in or remove elements, we say that metasomatism has occurred.
+        Metamorphic foliation can be defined either by preferred mineral orientation (aligned inequant crystals) or by
+        compositional banding. Preferred mineral orientation develops where differential stress causes the squashing
+        and shearing of a rock, so that its inequant grains align parallel with each other.
+        Geologists separate metamorphic rocks into two classes, foliated rocks and nonfoliated rocks, depending on
+        whether the rock contains foliation. Migmatite, a mixture of igneous and metamorphic rock, forms under
+        conditions where partial melting begins.
+        Rocks formed under relatively low temperatures are known as low-grade rocks, while those formed under
+        elevated temperatures are known as high-grade rocks. Intermediate grade rocks develop under intermediate
+        conditions. Different assemblages of minerals form at different grades.
+        Thermal metamorphism (also called contact metamorphism) occurs in an aureole surrounding an igneous
+        intrusion. Because there is no shearing involved, nonfoliated rocks form in contact aureoles. Dynamically
+        metamorphosed rocks form along faults, where rocks are only sheared, under metamorphic conditions.
+        Dynamothermal metamorphism (also called regional metamorphism) results when rocks are buried deeply
+        during mountain building.
+        Metamorphism occurs because of plate interactions: the process of mountain building in convergent zones
+        causes dynamothermal metamorphism; shearing along plate boundaries causes dynamic metamorphism; and
+        igneous plutons in rifts cause thermal metamorphism. The circulation of hot water causes a hydrothermal
+        metamorphism (also called metasomatism) of oceanic crust at mid-ocean ridges. Unusual metamorphic rocks
+        called blueschists form at the base of accretionary prisms. Metamorphism also results from meteorite impact and
+        from convection in the mantle.
+        We find extensive areas of metamorphic rocks in mountain ranges. Vast regions of continents known as shields
+        expose ancient (Precambrian) metamorphic rocks. Metamorphic rocks return to the Earth’s surface due to
+        exhumation. Exhumation occurs by erosion, by uplift and erosion, or by tectonic extension.
+    </p>
+    <h3>
+        Chapter 8: Review Questions
+    </h3>
+    
+    <!--
+        Question # 1
+    --> 
+    <p>
+        1. How are metamorphic rocks different from igneous and sedimentary rocks?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Metamorphic rocks are formed from pre-existing rocks (igneous, sedimentary, or metamorphic) that have undergone changes in mineralogy, texture, and/or chemical composition due to heat, pressure, and/or fluids. Igneous rocks are formed from the solidification of magma or lava, while sedimentary rocks are formed from the accumulation of sediment and the subsequent processes of compaction and cementation.
+        </p>
+    </details>
+
+    <!--
+        Question # 2
+    --> 
+    <p>
+        2. What phenomena cause metamorphism?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Metamorphism is caused by heat, pressure, and differential stress. Heat can be added by burial depth or contact with hot rock/hot groundwater. Pressure is added with depth. Differential stress arises at fault 
+        </p>
+    </details>
+
+    <!--
+        Question # 3
+    --> 
+    <p>
+        3. What is metamorphic foliation, and how does it form?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Metamorphic foliation is the development of a planar fabric in metamorphic rocks. It forms due to the alignment of inequant minerals (minerals with different dimensions) in response to directed pressure during metamorphism.
+        </p>
+    </details>
+
+    <!--
+        Question # 4
+    --> 
+    <p>
+        4. How is a slate different from a phyllite? How does a phyllite differ from a schist? How does a schist differ
+        from a gneiss?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Slate, phyllite, schist, and gneiss are all members of the slate-phyllite-schist-gneiss series of metamorphic rocks, which form from the regional metamorphism of shale, mudstone, or siltstone. Slate has a fine-grained, dense texture and exhibits slaty cleavage. Phyllite has a shiny, micaceous appearance and a well-developed foliation. Schist has a coarse-grained, platy texture with a well-developed foliation, and typically contains mica, chlorite, and/or garnet. Gneiss has a banded appearance due to alternating layers of different mineral compositions, and typically contains quartz, feldspar, and mica.
+        </p>
+    </details>
+
+    <!--
+        Question # 5
+    --> 
+    <p>
+        5. How does prograde metamorphism differ from retrograde metamorphism?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Prograde metamorphism is the process by which a rock undergoes increasing metamorphic grade with increasing temperature and pressure. Retrograde metamorphism is the process by which a rock undergoes decreasing metamorphic grade due to a decrease in temperature and/or pressure.
+        </p>
+    </details>
+
+    <!--
+        Question # 6
+    --> 
+    <p>
+        6. Why are hornfels nonfoliated?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Hornfels are nonfoliated because they form in a relatively uniform, high-temperature and pressure environment, without the directed pressure required for foliation to develop.
+        </p>
+    </details>
+
+    <!--
+        Question # 7
+    --> 
+    <p>
+        7. Describe the geologic settings where thermal (contact), dynamic, and regional (dynamothermal)
+        metamorphism take place.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Thermal (contact) metamorphism occurs when rocks are heated by the intrusion of magma. Dynamic metamorphism occurs in fault zones and shear zones, where rocks are subjected to intense deformation and pressure. Regional (dynamothermal) metamorphism occurs over broad regions during orogenesis, where rocks are subjected to high temperatures and pressures over long periods of time.
+        </p>
+    </details>
+
+    <!--
+        Question # 8
+    --> 
+    <p>
+        8. Why does metamorphism happen at the site of meteor impacts and along mid-ocean ridges?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Metamorphism occurs at the site of meteor impacts and along mid-ocean ridges because of the high temperatures and pressures generated by the impact or the spreading of the oceanic crust.
+        </p>
+    </details>
+
+    <!--
+        Question # 9
+    --> 
+    <p>
+        9. How does plate tectonics explain the peculiar combination of low-temperature but high-pressure minerals
+        found in a blueschist?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Blueschist forms in subduction zones, where oceanic crust is subjected to high pressure and relatively low temperature. This combination of conditions results in the formation of minerals that would not normally be stable at low temperatures but are stabilized by high pressures.
+        </p>
+    </details>
+
+    <!--
+        Question # 10
+    --> 
+    <p>
+        10. Where would you go if you wanted to find exposed metamorphic rocks. How did such rocks return to the
+        surface of the Earth after being at depth in the crust? 
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Exposed metamorphic rocks can be found in mountainous regions or areas with active tectonic activity. These rocks return to the surface of the Earth through uplift and erosion. Tectonic activity, such as mountain building and faulting, can cause rocks to be uplifted and exposed. Erosion then removes overlying rocks, exposing the metamorphic rocks at the surface.
+        </p>
+    </details>
+    <br><br><br>
+    <h3>
+        <ul class="break">
+        </ul>
+        Chapter 10: A Violent Pulse: Earthquakes
+        <ul class="break">
+        </ul>
+    </h3>
+
+    <p>
+        A fault is a fracture in the Earth’s crust along which movement has occurred. The movement can be vertical, horizontal, or a combination of both. The movement can be sudden, in which case an earthquake occurs, or slow, in which case the movement is called fault creep. Faults are classified by the direction of movement relative to the other side of the fault. A normal fault is a fault in which the hanging wall moves down relative to the footwall. A reverse fault is a fault in which the hanging wall moves up relative to the footwall. A thrust fault is a reverse fault with a dip angle of less than 45°. A strike-slip fault is a fault in which the movement is horizontal and parallel to the strike of the fault. A right-lateral strike-slip fault is a strike-slip fault in which the movement is to the right when viewed from either side of the fault. A left-lateral strike-slip fault is a strike-slip fault in which the movement is to the left when viewed from either side of the fault. <br>
+        The theory of elastic rebound is the theory that rocks on either side of a fault are deformed by tectonic forces until their internal strength is exceeded. At this point, the rocks break and rebound to their original undeformed shape. The sudden movement of the rocks causes an earthquake.<br>
+        Diffrent types of seismic waves include - P waves, S waves, and surface waves. P waves are compressional waves that travel through solids, liquids, and gases. S waves are shear waves that travel through solids. Surface waves are waves that travel along the surface of the Earth. <br>
+        Earthquakes are measured through the use of seismographs. Seismographs record the vibrations caused by earthquakes. The vibrations are recorded on a seismogram. The amplitude of the vibrations is measured on the seismogram. The amplitude is the maximum distance that the seismograph moves from its resting position. The amplitude is used to calculate the magnitude of the earthquake. The magnitude is a measure of the amount of energy released by the earthquake. The Richter scale is a scale used to measure the magnitude of an earthquake. The Richter scale is logarithmic, meaning that each increase of one unit on the scale represents a tenfold increase in the amplitude of the vibrations. The Richter scale is limited in that it can only be used to measure the magnitude of small earthquakes that occur within 600 km of the seismograph. The moment magnitude scale is a scale used to measure the magnitude of an earthquake. The moment magnitude scale is not limited by distance or size. <br>
+        Prediction of Earthquakes is difficult. Earthquakes are predicted by the use of foreshocks, changes in the elevation of the land surface, changes in the rate of flow of groundwater, and changes in the behavior of animals. Earthquakes are also predicted by the use of seismic gaps. Seismic gaps are areas along a fault where no earthquakes have occurred for a long period of time. Earthquakes are also predicted by the use of probability. The probability of an earthquake occurring in a given area is calculated based on the frequency of earthquakes in the area. <br>
+        Tsunami's are caused by earthquakes that occur in the ocean. The sudden movement of the ocean floor causes the water above it to move. The movement of the water causes a tsunami. Tsunamis are characterized by a series of waves. The first wave is not always the largest. Tsunamis can be caused by earthquakes, landslides, and volcanic eruptions. <br>
+    </p>
+    <h3>
+        Chapter 8: Reading
+    </h3>
+    <p>
+        Earthquakes are episodes of ground shaking, caused when earthquake waves reach the ground surface.
+        Earthquake activity is called seismicity.
+        Most earthquakes happen when rock breaks during faulting. A fault is a fracture on which sliding occurs. The
+        place where rock breaks and earthquake energy is released is called the hypocenter (focus), and the point on the
+        ground directly above the hypocenter is the epicenter.
+        We can distinguish between normal, reverse, thrust, and strike-slip faults on the basis of the relative motion of
+        rock across the fault. The amount of movement is called the displacement.
+        Active faults are faults on which movement is currently taking place. Inactive faults ceased being active long
+        ago but still can be recognized because of the displacement across them. Displacement on active faults that
+        intersect the ground surface may yield a fault scarp.
+        The intersection of the fault with the ground is the fault trace.
+        During fault formation, rock elastically strains, then cracks. Eventually, the cracks link to form a through-going
+        rupture on which sliding occurs. When this happens, the elastically strained rock breaks and vibrates, and this
+        generates an earthquake.
+        Faults exhibit stick-slip behavior in that they move in sudden increments.
+        Earthquakes in the continental crust can only happen in the brittle, upper part of the crust. At depth, where rocks
+        become ductile, earthquakes don’t occur.
+        Earthquake energy travels in the form of seismic waves. Body waves, which pass through the interior of Earth,
+        include P-waves (compressional waves) and S-waves (shear waves). Surface waves, which pass along the
+        surface of Earth, include R-waves (Rayleigh waves) and L-waves (Love waves). Earthquake waves travel
+        fastest through solid igneous rock, slower through sedimentary rock, slower yet through sediment, and slowest
+        of all through liquids (S-waves will not pass through a liquid).
+        We can detect earthquake waves using a seismograph.
+        Seismograms demonstrate that different earthquake waves arrive at different times because they travel at
+        different velocities. Using the difference between P-wave and S-wave arrival times, seismologists can pinpoint
+        the epicenter location.
+        The Mercalli intensity scale is based on documenting damage caused by an earthquake.
+        Magnitude scales, such as the Richter scale, are based on measuring the amount of ground motion, as indicated
+        by traces of waves on a seismogram.
+        A magnitude 8 earthquake yields about 10 times as much ground motion as a magnitude 7 earthquake and
+        5
+        releases about 32 times as much energy.
+        Most earthquakes occur in seismic belts, or zones, of which the majority lie along plate boundaries. Intraplate
+        earthquakes happen in the interior of plates. Different kinds of earthquakes happen at different kinds of plate
+        boundaries. Shallow-focus earthquakes associated with normal faults occur at divergent plate boundaries and in
+        rifts. Earthquakes associated with thrust and reverse faulting occur at convergent and collisional boundaries.
+        At convergent plate boundaries, we also observe intermediate- and deep-focus earthquakes, which define
+        Wadati-Benioff zones. Shallow-focus strike-slip earthquakes occur along transform boundaries.
+        Earthquake damage results from ground shaking (which can topple buildings), landslides (set loose by
+        vibration), sediment liquefaction (the transformation of compacted clay into a muddy slurry), fire, and tsunamis
+        (giant waves). Seismologists predict that earthquakes are more likely in seismic zones than elsewhere and can
+        determine the recurrence interval (the average time between successive events) for great earthquakes. But it may
+        never be possible to pinpoint the exact time and place at which an earthquake will take place.
+        Earthquake hazards and casualties can be reduced with better construction practices and zoning and by knowing
+        what to do during an earthquake.
+    </p>
+    <h3>
+        Chapter 8: Review Questions
+    </h3>
+    <!--
+        Question # 1
+    --> 
+    <p>
+        1. Compare normal, reverse, and strike-slip faults.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Normal, reverse, and strike-slip faults are different types of faults that occur when rocks in the Earth's crust break and move along the fault plane.
+        </p>
+    </details>
+
+    <!--
+        Question # 2
+    --> 
+    <p>
+        2. Describe elastic rebound theory and the concept of stick-slip behavior.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Elastic rebound theory explains how energy builds up and is released during an earthquake through stick-slip behavior.
+        </p>
+    </details>
+
+    <!--
+        Question # 3
+    --> 
+    <p>
+        3. Describe the motions of the four types of seismic waves. Which are body waves, and which are surface
+        waves?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">P-waves and S-waves are body waves that travel through the Earth's interior, while Love waves and Rayleigh waves are surface waves that travel along the Earth's surface.
+        </p>
+    </details>
+
+    <!--
+        Question # 4
+    --> 
+    <p>
+        4. On the seismogram of an earthquake recorded at a seismic station in Paris, the S-wave arrives 6 minutes after
+        the P-wave. On the seismogram obtained by a station in Mumbai for the same earthquake, the difference
+        between the P-wave and S-wave arrival times is 4 minutes. Which station is closer to the epicenter? From the
+        information provided, can you pinpoint the location of the epicenter? Explain.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">The station in Mumbai is closer to the epicenter based on the difference in arrival times of P-waves and S-waves, but the epicenter location cannot be determined with only one station.
+        </p>
+    </details>
+
+    <!--
+        Question # 5
+    --> 
+    <p>
+        5. Explain the contrasts among the different scales used to describe the size of an earthquake.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">The Richter scale, moment magnitude scale, and modified Mercalli scale are different ways to describe the size and impact of an earthquake.
+        </p>
+    </details>
+
+    <!--
+        Question # 6
+    --> 
+    <p>
+        6. How does seismicity on mid-ocean ridges compare with seismicity at convergent or transform boundaries?
+        Do all earthquakes occur at plate boundaries?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Seismicity on mid-ocean ridges is generally less frequent and less intense than at convergent or transform boundaries, but earthquakes can also occur within plates.
+        </p>
+    </details>
+
+    <!--
+        Question # 7
+    --> 
+    <p>
+        7. Is seismic risk greater in a town on the west coast of South America than on the east coast? Explain your
+        answer.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Seismic risk may be greater on the west coast of South America due to the region's location along the Pacific Ring of Fire.
+        </p>
+    </details>
+
+    <!--
+        Question # 8
+    --> 
+    <p>
+        8. What is a tsunami, and why does it form?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">A tsunami is a large ocean wave caused by seismic activity or other events that displace large volumes of water.
+        </p>
+    </details>
+
+    <!--
+        Question # 9
+    --> 
+    <p>
+        9. Explain how liquefaction occurs in an earthquake, and how it can cause damage.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Liquefaction occurs when shaking during an earthquake causes saturated soils to lose their strength and behave like a liquid, which can cause damage to structures.
+        </p>
+    </details>
+
+    <!--
+        Question # 10
+    --> 
+    <p>
+        10. How are long-term and short-term earthquake predictions made? What is the basis for determining a
+        recurrence interval, and what does a recurrence interval mean?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black; text-align: left">Long-term earthquake predictions are made based on recurrence intervals, while short-term predictions are made through monitoring of seismic activity.
+        </p>
+    </details>
+
+    
+    <br><br><br>
+    <h3>
+        <ul class="break">
+        </ul>
+        Chapter 12: Deep Time: How Old Is The Earth?
+        <ul class="break">
+        </ul>
+    </h3>
+
+
+    <!--
+        Question # 1
+    -->
+    <p>
+        1. Understand relative dating (e.g., cross-cutting relations, original horizontality ...) and absolute dating (e.g.,
+        isotopes, half-life...) methods. Most geologic periods were defined by relative dating (e.g., fossil
+        succession).
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Relative dating is a method of determining the age of rocks and fossils by comparing their positions in relation to each other. It includes principles such as superposition (the idea that younger rocks are on top of older rocks), original horizontality (the idea that sedimentary rocks are originally deposited horizontally), and cross-cutting relationships (the idea that a geological feature must be younger than any feature that it cuts across). Absolute dating, on the other hand, is a method of determining the actual numerical age of a rock or fossil. This can be done through techniques such as radiometric dating, which measures the decay of isotopes in rocks to determine their age based on their half-life.
+        </p>
+    </details>
+
+    <!--
+        Question # 2
+    -->
+    <p>
+        2. Understand and be able to apply the principles that can be used to interpret the order of events that occurred to
+        produce a given sequence of rocks.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The principles of relative dating can be used to interpret the order of events that produced a given sequence of rocks. By examining the positions of rocks in relation to each other, geologists can determine which rocks are older and which rocks are younger. For example, if a fault cuts across a layer of rock, the fault must be younger than the layer of rock it cuts across.
+        </p>
+    </details>
+
+
+     <!--
+        Question # 3
+    -->
+    <p>
+        3. Fossil succession allows relative ages to be produced for many fossiliferous sedimentary rocks regardless of
+        their spatial contexts. This allows for temporal correlation of widely separated strata on the basis of fossil
+        content.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Fossil succession is the principle that fossils in sedimentary rocks occur in a definite and determinable order. This allows for relative ages to be determined for many fossiliferous sedimentary rocks, regardless of their spatial context. By comparing the fossils found in different rocks, geologists can determine the relative ages of those rocks and correlate them with rocks in other locations.
+        </p>
+    </details>
+
+     <!--
+        Question # 4
+    -->
+    <p>
+        4. Become familiar with the geologic time scale: The ordered sequence of eons (Hadean, Archean, Proterozoic,
+        to Phanerozoic) and of eras within the Phanerozoic eon (Paleozoic, Mesozoic, to Cenozoic), as well as starting
+        6 dates for the eons and for the Mesozoic and Cenozoic eras.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The geologic time scale is a chronological representation of Earth's history. It is divided into eons, eras, periods, and epochs, based on changes in Earth's geology, climate, and life forms. The eons are the largest divisions of time and include the Hadean, Archean, Proterozoic, and Phanerozoic eons. The Phanerozoic eon is further divided into three eras: the Paleozoic, Mesozoic, and Cenozoic.
+        </p>
+    </details>
+
+     <!--
+        Question # 5
+    -->
+    <p>
+        5. Understand the distinction between relative time represented by the names of eras, periods, and so on, and
+        numerical time represented by dates measured in years.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The names of eras, periods, and other units in the geologic time scale represent relative time. They indicate the order in which events occurred, but not the actual numerical ages of those events. Numerical time is represented by dates measured in years, and is determined through methods such as radiometric dating.
+        </p>
+    </details>
+
+     <!--
+        Question # 6
+    -->
+    <p>
+        6. Understand that Earth is a geologically active planet and Earth materials are continually recycled so that the
+        age of Earth is likely significantly older than the oldest rocks (~4 Ga). The widely cited 4.6 Ga age of Earth
+        arises from radiometric dating of meteorites (orbital characteristics of the solar system imply
+        contemporaneous formation of the Sun, planets, and asteroids)
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Earth is a geologically active planet, and its materials are continually recycled. This means that the age of Earth is likely significantly older than the oldest rocks on its surface, which are approximately 4 billion years old. The widely cited age of 4.6 billion years for Earth comes from radiometric dating of meteorites, which are believed to have formed at the same time as the solar system.
+        </p>
+    </details>
+    
+    <h3>
+        Chapter 12: Readings
+    </h3>
+    
+    <p>
+        The concept of geologic time, the span of time since Earth’s formation, developed when early geologists
+        suggested that Earth must be very old if geologic features formed by the same natural processes we see today.
+        Relative age specifies whether one geologic feature is older or younger than another; numerical age provides
+        the age of a geologic feature in years.
+        Geologic principles (i.e., uniformitarianism, superposition, original horizontality, original continuity, cross-
+        cutting relations, inclusions, baked contacts, and fossil succession) provide the basis for determining the relative
+        ages of rocks and other geologic features. By working out relative ages, we can construct the geologic history
+        of a region.
+        The principle of fossil succession states that the assemblage of fossils in a sequence of strata changes from base
+        to top. Once a fossil species goes extinct, it never reappears.
+        Strata are not deposited continuously at a location. An interval of nondeposition or erosion is called an
+        unconformity. Geologists recognize three kinds of unconformity: angular unconformity, nonconformity, and
+        disconformity.
+        A stratigraphic column shows the succession of formations in a region. A given succession of strata that can be
+        traced over a fairly broad region is called a stratigraphic formation. The boundary surface between two
+        formations is a contact. Several related formations in succession constitute a group. The process of determining
+        the relationship between strata at one location and strata at another is called correlation. A geologic map shows
+        the distribution of formations.
+        A composite stratigraphic column that represents the entirety of geologic time is called the geologic column.
+        The geologic column’s largest subdivisions, each of which represents a specific interval of time, are eons
+        (Hadean, Archean, Proterozoic, or Phanerozoic). Eons are further subdivided into eras, eras into periods, and
+        periods into epochs.
+        The numerical age of rocks can be determined by radiometric dating. This is because radioactive elements,
+        found in small concentrations in many minerals, decay at a constant rate. During radioactive decay, parent
+        isotopes transform into daughter isotopes. The decay rate for a given element is known as its half-life, the time it
+        takes for half of the parent isotopes to decay. The ratio of parent to daughter isotopes in a mineral grain indicates
+        the mineral’s age.
+        The radiometric date of a mineral specifies the time at which the mineral cooled below a certain temperature.
+        We can use radiometric dating to determine when an igneous rock solidified from a melt and when a
+        metamorphic rock cooled from high temperatures.
+        Other methods for dating materials include counting rings in trees, growth rings of shells, ice layers in glaciers...
+        We can also study the sequence of magnetic reversals in strata.
+        From the radiometric dating of meteorites and Moon rocks, geologists conclude that Earth formed about 4.56
+        billion years ago. Our species, Homo sapiens, has been around for about 0.000001% of geologic time.
+    </p>
+
+    <!--
+        Question # 1
+    -->
+    <h3>
+        Chapter 12: Review Questions
+    </h3>
+    <p>
+        1. Compare numerical age and relative age.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Numerical age refers to the actual age of a rock or fossil, measured in years, while relative age refers to the order in which rocks and fossils occurred in time compared to one another.
+        </p>
+    </details>
+
+    <!--
+        Question # 2
+    -->
+    <p>
+        2. Describe the principles that allow us to determine the relative ages of geologic events.
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The principles that allow us to determine the relative ages of geologic events include superposition (the idea that younger rocks are on top of older rocks), original horizontality (the idea that sedimentary rocks are originally deposited horizontally), and cross-cutting relationships (the idea that a geological feature must be younger than any feature that it cuts across).
+        </p>
+    </details>
+
+    <!--
+        Question # 3
+    -->
+    <p>
+        3. How does the principle of fossil succession allow us to determine the relative ages of strata?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The principle of fossil succession states that fossils in sedimentary rocks occur in a definite and determinable order. By comparing the fossils found in different rocks, geologists can determine the relative ages of those rocks and correlate them with rocks in other locations.
+        </p>
+    </details>
+
+    <!--
+        Question # 4
+    -->
+    <p>
+        4. How does an unconformity develop?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">An unconformity is a gap in the geologic record where layers of rock have been eroded away, leaving an area with no rocks or an area where older rocks are overlain by younger rocks. Unconformities can develop through erosion, uplift, and other geologic processes.
+        </p>
+    </details>
+
+    <!--
+        Question # 5
+    -->
+    <p>
+        5. Describe two different methods of correlating rock units. How was correlation used to develop the geologic
+        7 column? What is a stratigraphic formation?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Two different methods of correlating rock units are lithostratigraphy and biostratigraphy. Correlation was used to develop the geologic column by comparing rock units from different locations and determining their relative ages. A stratigraphic formation is a unit of rock that is defined by its physical characteristics and its position in the geologic column.
+        </p>
+    </details>
+
+    <!--
+        Question # 6
+    -->
+    <p>
+        6. How do geologists obtain a radiometric date?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Geologists obtain a radiometric date by measuring the decay of isotopes in rocks. They use techniques such as uranium-lead dating and potassium-argon dating to determine the age of rocks.
+        </p>
+    </details>
+
+    <!--
+        Question # 7
+    -->
+    <p>
+        7. Why can’t we date sedimentary rocks directly?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Streams play a crucial role in the hydrologic cycle by transporting water from one place to another. They receive water from various sources such as precipitation, melting snow, and groundwater discharge. Streams also act as a link between the surface water and groundwater, allowing water to move between these two reservoirs. Additionally, streams contribute to the recharge of aquifers by allowing water to infiltrate into the ground.
+        </p>
+    </details>
+
+    <!--
+        Question # 8
+    -->
+    <p>
+        8. Why is radiocarbon dating useful in archaeology, but useless for dating dinosaur fossils?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Radiocarbon dating is useful in archaeology because it can be used to date organic materials that are up to about 50,000 years old. However, it is useless for dating dinosaur fossils because dinosaurs lived millions of years ago and the half-life of carbon-14 is only 5,700 years.
+        </p>
+    </details>
+
+    <!--
+        Question # 9
+    -->
+    <p>
+        9. What is the age of the oldest rocks on Earth? What is the age of the oldest rocks known? Why is there a
+        difference?
+    </p>
+    <details>
+        <summary style="color:red" >Answer</summary>
+        <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Porosity refers to the percentage of void space in a material, while permeability refers to how easily fluids can flow through that material. Some substances with high porosity but low permeability include clay, shale, and unfractured granite.
+        </p>
+    </details>
+
+    <br><br><br>
+    <h3>
+        <ul class="break">
+        </ul>
+        Chapter 21: The Hydrogen Cycle
+        <ul class="break">
+        </ul>
+    </h3>
+
+    <div>
+        <p>
+            <li>
+                The Global Water Cycle is driven by evaporation, precipitation, infiltration, and flow.<br>
+                • Deserts are characterized by little annual precipitation, lengthy periods of drought, sparse vegetative
+                cover, high rates of evaporation, and an absence of permanent streams of local origin.<br>
+                • The physiographic factors that produce deserts: descent of dry air in subtropics, development of rain
+                shadows on the leeward side of mountain ranges, isolation from the ocean within the interior of a
+                massive continent, and cold ocean currents.<br>
+                • Concept of residence time
+                • Within the troposphere, global convection is driven by hot air rising at the equator and cold air sinking
+                at the poles, giving rise to three rows of convection cells in either hemisphere (tropical Hadley,
+                temperate Ferrel, and polar). For example, warm moist air rises at the tropics, and cools and sheds rain
+                as it heads in either direction. At 30° latitude, the cold air (now dry) sinks and heats up, forming high
+                pressure and dry conditions in the horse latitudes. The tropical (Hadley) cell is completed by the return
+                of air to the equator along the surface. The air circulation patterns control the distribution of rainfall on<br>
+                the Earth’s surface.
+            </li>
+        </p>
+    </div>
+
+
+    
+
+    <div>
+        <h3>
+            Chapter 21 Readings
+        </h3>
+        <p>
+            Air generally contains water. The ratio between the measured water content and the maximum possible amount
+            of water that the air can hold at a given temperature is its relative humidity.
+            Deserts generally receive less than 20 cm of rain per year. Vegetation covers no more than 15% of their surface.
+            Subtropical deserts form between 20° and 30° latitude, rain-shadow deserts are found on the inland side of
+            mountain ranges, coastal deserts are found on the land adjacent to cold ocean currents, continental-interior
+            deserts exist in landlocked regions far from the ocean and polar deserts form at high latitude.
+            High latitudes receive less solar energy, or insolation, than low latitudes. This contrast in temperature initiates
+            convection in the atmosphere; warm air rises at the equator, and cold air sinks at the poles.
+            Deserts generally receive less than 20 cm of rain per year. Vegetation covers no more than 15% of their surface.
+            Subtropical deserts form between 20° and 30° latitude, rain-shadow deserts are found on the inland (leeward)
+            side of mountain ranges, coastal deserts are found on the land adjacent to cold ocean currents, continental-
+            interior deserts exist in landlocked regions far from the ocean and polar deserts form at high latitude.
+            In deserts, chemical weathering happens slowly, so rock bodies tend to erode primarily by physical weathering.
+        </p>
+    </div>
+
+
+    <!--
+        Questions 
+    -->
+    <div>
+        <h3>
+            Chapter 21: Review Questions
+        </h3>
+        <!--
+        Question # 1
+        -->
+        <p>
+            1. Of all the water on Earth, only a very small amount is directly available for human use. Why? Answer this
+            question by explaining the relative amounts of water present in different forms and places on earth, and
+            comment on their availability and suitability for human use.
+        </p>
+        <details>
+            <summary style="color:red" >Answer</summary>
+            <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Of all the water on Earth, about 97.5% is saltwater found in oceans and seas, and the remaining 2.5% is freshwater found in rivers, lakes, and underground aquifers. However, of this freshwater, 68.7% is frozen in glaciers and polar ice caps, and 30.1% is groundwater. This leaves only about 0.3% of freshwater available for human use in surface water sources like rivers and lakes. This limited amount of available freshwater is often contaminated or inaccessible, making it unsuitable for human use.
+            </p>
+        </details>
+
+        <!--
+        Question # 2
+        -->
+        <p>
+            2. What is the relative humidity of the atmosphere?
+        </p>
+        <details>
+            <summary style="color:red" >Answer</summary>
+            <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The relative humidity of the atmosphere is the amount of water vapor present in the air compared to the maximum amount that the air could hold at a given temperature. It is expressed as a percentage, with 100% indicating that the air is saturated and cannot hold any more water vapor.The relative humidity of the atmosphere is the amount of water vapor present in the air compared to the maximum amount that the air could hold at a given temperature. It is expressed as a percentage, with 100% indicating that the air is saturated and cannot hold any more water vapor.
+            </p>
+        </details>
+
+        <!--
+        Question # 3
+        -->
+        <p>
+            3. Why is rainfall unevenly distributed on Earth’s surface? Which regions tend to have a lot of rainfall, and why?
+            Which regions are dry, and why?
+        </p>
+        <details>
+            <summary style="color:red" >Answer</summary>
+            <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Rainfall is unevenly distributed on Earth's surface due to differences in temperature, atmospheric pressure, and prevailing winds. Regions near the equator tend to have a lot of rainfall because warm air rises and cools, causing moisture to condense and form clouds. This process produces heavy rainfall in tropical regions. In contrast, regions near the poles have less rainfall because the cold air is less able to hold moisture. Additionally, mountain ranges can block or divert precipitation, creating dry regions on the leeward side.
+            </p>
+        </details>
+
+        <!--
+        Question # 4
+        -->
+        <p>
+            4. How long does the average water drop stay in a river?
+        </p>
+        <details>
+            <summary style="color:red" >Answer</summary>
+            <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The average water drop stays in a river for about 2 weeks, although this can vary depending on factors such as the size of the river, flow rate, and temperature.
+            </p>
+        </details>
+
+        <!--
+        Question # 5
+        -->
+        <p>
+            5. How long does the average water molecule stay in the atmosphere?
+        </p>
+        <details>
+            <summary style="color:red" >Answer</summary>
+            <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The average water molecule stays in the atmosphere for about 9 days before it is removed by precipitation or other processes.
+            </p>
+        </details>
+
+        <!--
+        Question # 6
+        -->
+        <p>
+            6. Have today’s deserts always been deserts?
+        </p>
+        <details>
+            <summary style="color:red" >Answer</summary>
+            <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">No, today's deserts have not always been deserts. Desertification can occur as a result of natural climate change, such as changes in atmospheric circulation or long-term shifts in ocean currents. However, human activities such as overgrazing, deforestation, and unsustainable agriculture can also contribute to desertification by causing soil degradation and loss of vegetation cover.
+            </p>
+        </details>
+    </div>
+
+    <!--
+        Chapter 16 and 17
+    -->
+    <div>
+        <div>
+            <h3>
+                <ul class="break">
+                </ul>
+                Chapter 16 and 17
+                <ul class="break">
+                </ul>
+            </h3>
+            <p>
+                Stream channels are the pathways through which water flows in a stream or river. Point bars are depositional features found on the inside bend of a meandering stream, while cut banks are erosion features found on the outside bend. Oxbow lakes are formed when a meander loop is cut off from the main stream flow, forming a curved lake.
+                <br><br>
+                The conservation of mass equation states that mass cannot be created or destroyed, only transformed. In a watershed, precipitation falls onto the land and either infiltrates into the ground or becomes runoff that flows into streams and rivers. The hydrograph shows the change in streamflow over time in response to precipitation events. Runoff can cause erosion by transporting sediment and cutting into stream banks. The dominant runoff paths and erosion processes vary depending on factors such as slope, soil type, vegetation, and climate.
+                <br><br>
+                Mass movements are the downslope movement of soil, rock, or debris under the influence of gravity. Slump is a type of mass movement where a block of material moves along a curved surface. Creep is the slow, gradual movement of soil downhill. Debris flow is a fast-moving mixture of rock, soil, and water that can be triggered by heavy rainfall or other factors. Mud flow is a type of debris flow that consists mostly of mud and fine-grained sediment. Mass movements can occur in many different settings, including hillslopes, cliffs, and coastal areas.
+                <br><br>
+                Steep slopes are more prone to mass movement because gravity has a greater influence on the material. The addition of mass upslope can increase the weight and stress on lower layers, making them more susceptible to movement. Excavation downslope can destabilize material and increase the likelihood of mass movement. Supersaturation of pore space can occur when soils become saturated with water, reducing the strength of the soil and increasing the likelihood of movement. Barren hillsides with little vegetation are more prone to erosion and mass movement. Active seismicity can trigger mass movements by shaking the ground and destabilizing material.
+            </p>
+        </div>
+
+        <!--
+            Reading
+        -->
+        <div>
+            <h3>
+                Chapter 16 and 17 Reading
+            </h3>
+            <p>
+                Streams are bodies of water that flow down channels and drain the land surface. Channels develop when
+                sheetwash cuts into the substrate and concentrates the water flow; they grow by headward erosion.
+                Some streams have straight reaches; others contain snakelike curves called meanders. Braided steams consist of
+                many entwined channels. Streams carry water out of a drainage basin, or catchment (or watershed); a drainage
+                divide separates two adjacent catchments.<br>
+                Drainage networks consist of many tributaries that flow into a trunk stream. The discharge of a stream is the
+                volume of water passing a point in a second. Most streams are turbulent, meaning that their water swirls in
+                complex patterns.<br><br>
+                Streams erode the landscape by scouring, lifting, abrading, and dissolving. The resulting sediment is divided
+                among dissolved, suspended, and bed loads.<br><br>
+                Longitudinal profiles (images of the shape of a stream bed in cross section from its source to its mouth) of
+                streams are concave up. Typically, a stream has steeper gradients at its headwaters than near its mouth. Streams
+                cannot cut below the base level.<br><br>
+                Meandering streams wander back and forth across a floodplain. Such a stream erodes its outer bank and builds
+                out sediment into a point bar on the inner bank. Eventually, a meander may be cut off and turn into an oxbow
+                lake. Braided streams consist of many entwined channels. Where streams or rivers flow into standing water,
+                they deposit deltas. The shape of a delta depends on the balance between the amount of sediment supplied by the
+                river and the amount of sediment redistributed or carried away by wave activity along the coast.
+                If an increase in rainfall or spring melting causes more water to enter a stream than the channel can hold, a flood
+                results.<br><br>
+                Types of mass wasting differ from one another in their speed and in the character of the moving mass. Creep
+                and slumping are slow. Mudflows and debris flows move faster, and avalanches and rockfalls move the fastest.
+                Mass wasting occurs on land and underwater.<br><br>
+                Mass wasting can occur whenever relief has been developed, particularly if the substrate has undergone
+                weathering. Climate can affect the susceptibility of a region to mass wasting because it affects the chacter of
+                vegetation and the amount and distribution of rainfall.
+            </p>
+
+        </div>
+
+        <!--
+            Questions
+        -->
+        <div>
+            <h3>
+                Chapter 16 and 17 Questions
+            </h3>
+            <div>
+                <!--
+                    Question # 1
+                -->
+                <p>
+                    1. What role do streams have during the hydrologic cycle? Indicate various sources of water in streams.
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Streams play a crucial role in the hydrologic cycle by transporting water from one place to another. They receive water from various sources such as precipitation, melting snow, and groundwater discharge. Streams also act as a link between the surface water and groundwater, allowing water to move between these two reservoirs. Additionally, streams contribute to the recharge of aquifers by allowing water to infiltrate into the ground.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 2
+                -->
+                <p>
+                    2. Why is average downstream velocity always less than maximum downstream velocity?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The average downstream velocity is always less than the maximum downstream velocity because the velocity of a stream is influenced by many factors such as channel shape, friction, and turbulence. As water flows downstream, it encounters various obstructions, such as rocks and vegetation, that cause the flow to slow down. The presence of friction and turbulence also slows down the flow of water. As a result, the average downstream velocity is always less than the maximum velocity.
+                    </p>
+                </details>
+            </div>
+
+
+            <div>
+                <!--
+                    Question # 3
+                -->
+                <p>
+                    3. What are three components of the load of a stream?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The three components of the load of a stream are dissolved load, suspended load, and bed load. The dissolved load consists of minerals and other materials that are dissolved in the water. The suspended load includes small particles such as silt and clay that are carried in the water. The bed load consists of larger particles such as sand and gravel that are moved along the bottom of the stream.
+                    </p>
+                </details>
+            </div>
+
+
+            <div>
+                <!--
+                    Question # 4
+                -->
+                <p>
+                    4. Write the conservation of mass equation for water in a watershed (and explain its components) and use this
+                    equation to explain the origin of stream flow during the dry season.
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The conservation of mass equation for water in a watershed is:
+
+                    Precipitation = Runoff + Evapotranspiration + Infiltration
+
+                    This equation states that the total amount of water that falls on a watershed (precipitation) is distributed among three components: runoff, evapotranspiration, and infiltration. During the dry season, when there is little or no precipitation, the only source of stream flow is the groundwater discharge. This is because, during the dry season, most of the water in the watershed is stored in the ground and is released as groundwater to maintain stream flow.
+                    </p>
+                </details>
+            </div>
+
+
+            <div>
+                <!--
+                    Question # 5
+                -->
+                <p>
+                    5. Sketch a hydrograph that would be generated from a highly urbanized small watershed as a consequence of a
+                short period of intense rain. On the same plot also show the hydrograph that would be generated by the same
+                storm for a watershed of the same size but consisting of densely forested, gently rolling hills. Explain how
+                the two hydrographs differ, and describe the physical processes responsible for the differences between the
+                two hydrographs.
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The hydrograph generated from a highly urbanized small watershed as a consequence of a short period of intense rain would have a high peak discharge and a short time to peak, indicating that the runoff response is rapid. The hydrograph generated by the same storm for a watershed of the same size but consisting of densely forested, gently rolling hills would have a lower peak discharge and a longer time to peak, indicating that the runoff response is delayed. The physical processes responsible for the differences between the two hydrographs are infiltration and interception. In the urbanized watershed, there is little vegetation to intercept the rainfall and most of the water runs off immediately. In the forested watershed, the vegetation intercepts some of the rainfall, and the soil has a high infiltration capacity, allowing water to infiltrate into the ground and slowly release to the stream.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 6
+                -->
+                <p>
+                    6. Describe the four paths that precipitation takes to become runoff in channels; illustrate each of these four paths
+                    on a diagram showing a cross-section of a hillside. Explain which path tends to predominate during intense
+                    rainstorms in each of the following environments: 1) in parking lot, 2) the forested hillslopes after an intense
+                    wildlands fire, 3) the rolling, grass-covered hills; and (4) sparsely vegetated arid lands in Mojave Desert.
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The four paths that precipitation takes to become runoff in channels are infiltration, throughflow, overland flow, and channel flow. Infiltration occurs when water soaks into the ground, throughflow occurs when water moves through the soil, overland flow occurs when water flows over the surface of the ground, and channel flow occurs when water flows in a stream channel. In a parking lot, overland flow tends to predominate during intense rainstorms. In the forested hillslopes after an intense wildlands fire, infiltration tends to predominate during intense rainstorms. In rolling, grass-covered hills, throughflow tends to predominate during intense rainstorms. In sparsely vegetated arid lands in the Mojave Desert, overland flow tends to predominate during intense rainstorms.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 7
+                -->
+                <p>
+                    7. What steps can people take to reduce the risk of mass wasting?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">People can take several steps to reduce the risk of mass wasting. These include avoiding steep slopes, planting vegetation on hillsides to stabilize soil, constructing retaining walls, and using appropriate engineering techniques to stabilize slopes. Additionally, monitoring and early warning systems can be implemented to detect and alert people to potential mass wasting events
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 8
+                -->
+                <p>
+                    8. How does a small amount of water between grains hold material together? How does this change when the
+                    sediment is oversaturated?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">When sediment is dry, grains can move more freely and do not stick together. However, when a small amount of water is added, it can act as a glue between the grains and hold them together, making the sediment more cohesive. This is known as surface tension. If the sediment becomes oversaturated with water, the water can no longer act as a glue and the sediment becomes unstable and prone to mass wasting.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 9
+                -->
+                <p>
+                    9. What force is responsible for downslope movement? What force helps resist that movement?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Downslope movement is primarily caused by gravity, which acts as a force pulling materials down the slope. The force that helps resist this movement is the strength of the slope materials themselves, which can vary depending on their composition, cohesion, and other physical properties.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 10
+                -->
+                <p>
+                    10. What do you look for in the hills above a house, in order to gauge whether there is a significant risk of that
+                    house being hit by a debris flow? What can be done to reduce the risk to the house or to the people living in
+                    it? You may use drawing to illustrate your answers.
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">To gauge the risk of a house being hit by a debris flow, it is important to look for signs of previous mass wasting events in the hills above the house, such as scarps, exposed bedrock, or areas of bare soil. If there is evidence of previous debris flows, it is more likely that another event could occur in the future. To reduce the risk to the house or people living in it, measures such as building retaining walls, planting vegetation to stabilize the slope, or relocating the house altogether may be necessary. A drawing could illustrate the potential hazards and proposed solutions.
+                    </p>
+                </details>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--
+        Chapter 19: Ground Water
+    -->
+    <div>
+        <div>
+            <h3>
+                <ul class="break">
+                </ul>
+                Chapter 19: Ground Water
+                <ul class="break">
+                </ul>
+            </h3>
+        </div>
+
+        <!--
+            Objectives
+        -->
+        <div>
+            <li>
+                Groundwater flows from regions of recharge to regions of discharge, driven by gravity and water pressure.
+            </li>
+            <li>
+                Pores occur in all geologic materials. If pores are sufficiently connected to form conduits for flow, the
+                material is permeable and can serve as an aquifer (impermeable rocks and sediments are termed aquitards).
+                High porosity does not necessarily mean high permeability. The water table separates an unsaturated zone
+                (wherein pores are mostly air-filled) from a saturated zone (where water permanently fills the pores) within
+                an unconfined aquifer (one that is not bounded above by an aquitard). Locally, the water table is in general a
+                subdued mimic of surface topography, rising slightly in hillsides due to increased recharge.
+            </li>
+            <li>
+                Darcy’s law states that groundwater flux per unit cross-sectional area of an aquifer is equal to the slope of the
+                water table multiplied by hydraulic conductivity.
+            </li>
+            <li>
+                Groundwater can both dissolve and precipitate minerals at or below the surface. Water with excessively high
+                concentrations of dissolved ions is undrinkable. “Hard” water contains a relatively great concentration of
+                dissolved calcium and magnesium.
+            </li>
+            <li>
+                Pumping water from a well produces a cone of depression in the water table around the well base. Excessive
+                pumping may permanently lower the water table in a region. Use of groundwater at rates which make it a
+                nonrenewable resource is termed “groundwater mining.” Safe yield needs to be evaluated using the
+                conservation of mass equation.
+            </li>
+            <li>
+                A variety of human products (pesticides, sewage, fertilizer, gasoline, chemicals) have caused serious
+                groundwater contamination problems. Wells can be contaminated by the reversal of groundwater flow in
+                regions that have been overpumped
+            </li>
+        </div>
+        <!--
+            Readings
+        -->
+        <div>
+            <h3>
+                Chapter 19: Readings
+            </h3>
+            <p>
+                During the hydrologic cycle, water infiltrates into the ground and fills the pores in rock and sediment. This
+                subsurface water is called groundwater. The amount of open space in rock or sediment is its porosity, and the
+                degree to which pores are interconnected, so that water can flow through, defines its permeability.
+                <br><br>
+                Geologists classify rock and sediment according to their permeability. Aquifers are relatively permeable, and
+                aquitards (and aquicludes) are relatively impermeable. The water table is the surface in the ground above which
+                pores contain mostly air, and below which pores are filled with water. The shape of a water table is generally a
+                subdued imitation of the shape of the overlying land surface.
+                <br><br>
+                Groundwater flows wherever the water table has a hydraulic gradient. Groundwater flows slowly from recharge
+                areas to discharge areas. Darcy’s law shows that the rate of groundwater flow depends on permeability and on
+                the hydraulic gradient.
+                <br><br>
+                Groundwater contains dissolved ions. These ions may come out of solution to form the cement of sedimentary
+                rocks or to fill veins.
+                <br><br>
+                Groundwater can be extracted in wells. An ordinary well penetrates below the water table, but in an artesian
+                well, water rises on its own. Pumping water out of a well too fast causes drawdown, yielding a cone of
+                depression. At a spring, groundwater exits the ground on its own.
+                <br><br>
+                Hot springs and geysers release hot water to Earth’s surface. This water may have been heated by residing very
+                deep in the crust or by the proximity of a magma chamber or recently formed volcanic rock.
+                Groundwater is a precious resource, used for municipal water supplies, industry, and agriculture. In recent years,
+                some regions have lost their groundwater supply because of overuse or contamination.
+            </p>
+        </div>
+
+        <!--
+            Questions
+        -->
+        <div>
+            <h3>
+                Chapter 19: Review Questions
+            </h3>
+            <!--
+            Question # 1
+            -->
+            <p>
+                1. How do porosity and permeability differ? Give examples of substances with high porosity but low
+                permeability.
+            </p>
+            <details>
+                <summary style="color:red" >Answer</summary>
+                <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Porosity refers to the percentage of void space in a material, while permeability refers to how easily fluids can flow through that material. Some substances with high porosity but low permeability include clay, shale, and unfractured granite.
+                </p>
+            </details>
+
+             <!--
+            Question # 2
+            -->
+            <p>
+                2. What factors affect the level of the water table? What factors affect the flow direction of the water below the
+                water table?
+            </p>
+            <details>
+                <summary style="color:red" >Answer</summary>
+                <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The level of the water table is affected by factors such as precipitation, evapotranspiration, and the permeability of the soil and rock layers above it. The flow direction of water below the water table is affected by the hydraulic gradient, which is the slope of the water table, and the permeability of the materials it passes through.
+                </p>
+            </details>
+
+             <!--
+            Question # 3
+            -->
+            <p>
+                3. How does the rate of groundwater flow compare with that of moving ocean water or river currents?
+            </p>
+            <details>
+                <summary style="color:red" >Answer</summary>
+                <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Groundwater flows much slower than ocean water or river currents, typically at rates of only a few meters per day.
+                </p>
+            </details>
+
+             <!--
+            Question # 4
+            -->
+            <p>
+                4. What does Darcy’s law tell us about how the hydraulic gradient and permeability affect discharge?
+            </p>
+            <details>
+                <summary style="color:red" >Answer</summary>
+                <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Darcy's law states that discharge is proportional to the hydraulic gradient and permeability. An increase in either the hydraulic gradient or permeability will result in an increase in discharge.
+                </p>
+            </details>
+
+             <!--
+            Question # 5
+            -->
+            <p>
+                5. How does the chemical composition of groundwater change with time? Why is “hard water” hard?
+            </p>
+            <details>
+                <summary style="color:red" >Answer</summary>
+                <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The chemical composition of groundwater can change with time as it interacts with the surrounding rock and soil. "Hard water" is caused by the presence of dissolved minerals such as calcium and magnesium.
+                </p>
+            </details>
+
+             <!--
+            Question # 6
+            -->
+            <p>
+                6. How does excessive pumping affect the local water table?
+            </p>
+            <details>
+                <summary style="color:red" >Answer</summary>
+                <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Excessive pumping can lower the local water table, causing wells to go dry and reducing the amount of water available for other uses such as irrigation or drinking water.
+                </p>
+            </details>
+
+             <!--
+            Question # 7
+            -->
+            <p>
+                7. How is an artesian well different from an ordinary well? What condition must be met for a flowing artesian
+                well to exist?
+            </p>
+            <details>
+                <summary style="color:red" >Answer</summary>
+                <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">An artesian well is a well in which water flows to the surface without pumping, due to the pressure of water in an underground aquifer. A flowing artesian well exists when the aquifer is confined between two impermeable layers and the water is under enough pressure to rise above the level of the well.
+                </p>
+            </details>
+
+             <!--
+            Question # 8
+            -->
+            <p>
+                8. Is groundwater a renewable or nonrenewable resource? Explain how the difference in time frame changes this
+                answer.
+            </p>
+            <details>
+                <summary style="color:red" >Answer</summary>
+                <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Groundwater is technically a renewable resource, but it can be depleted if it is pumped out of an aquifer faster than it is replenished by natural processes such as precipitation or infiltration. The time frame over which groundwater is considered renewable or nonrenewable depends on the rate of recharge and the rate of pumping.
+                </p>
+            </details>
+
+             <!--
+            Question # 9
+            -->
+            <p>
+                9. Using concepts such as the water table, cone of depression, and the conservation of mass equation, explain
+                why groundwater pumping will lead to decreased runoff to streams, and/or depletion of groundwater
+                reserves. Why is it not valid to assume that “safe yield” equals the rate of aquifer recharge?
+            </p>
+            <details>
+                <summary style="color:red" >Answer</summary>
+                <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Groundwater pumping can lead to decreased runoff to streams and depletion of groundwater reserves due to the formation of a cone of depression around the well. This reduces the amount of water available for other uses and can cause ecological impacts. "Safe yield" cannot be assumed to equal the rate of aquifer recharge because it does not take into account the long-term sustainability of the aquifer or the potential for future changes in recharge rates.
+                </p>
+            </details>
+        </div>
+
+    </div>
+
+    <!--
+        Chapter 23: Global Change
+    -->
+    <div>
+
+        <div>
+            <h3>
+                <ul class="break">
+                </ul>
+                Chapter 23: Global Change
+                <ul class="break">
+                </ul>
+            </h3>
+        </div>
+
+        <div>
+            <li>
+                The Earth's climate and atmosphere are complex systems that have undergone changes throughout its history. One of the most significant changes that are occurring in recent times is the increasing concentration of greenhouse gases in the atmosphere. Greenhouse gases, such as carbon dioxide, methane, and water vapor, trap heat in the atmosphere and contribute to the greenhouse effect, which causes global warming.
+            </li>
+            <br>
+            <li>
+                Positive and negative feedback processes can amplify or dampen the effects of the greenhouse effect. For example, as the Earth's temperature increases due to the greenhouse effect, the melting of ice leads to a reduction in reflectivity, which leads to more heat absorption and further warming, leading to a positive feedback loop. In contrast, the increased evaporation due to global warming leads to the formation of more clouds, which reflect more sunlight, leading to a negative feedback loop.
+            </li>
+            <br>
+            <li>
+                Human industrial activities, such as the burning of fossil fuels and deforestation, have increased the concentration of greenhouse gases in the atmosphere. This increase has led to global warming and climate change, causing changes in temperature, evaporation, precipitation, runoff, sea level, and soil moisture. One of the most notable effects of global warming is the development of a hole in the ozone layer, which can lead to health issues and environmental damage.
+            </li>
+            <br>
+            <li>
+                Earth's climate has changed throughout its history, with some changes being unidirectional and others fluctuating cyclically. Factors that contribute to long-term climate change include volcanic activity, land uplift, and the formation of materials that remove carbon dioxide from the atmosphere. Short-term climate change can result from fluctuations in solar radiation, changes in Earth's orbit and tilt, ocean currents, and catastrophic events such as bolide impacts and volcanic eruptions.
+            </li>
+            <br>
+            <li>
+                The carbon cycle is an essential example of a biogeochemical cycle, where carbon moves between the atmosphere, biosphere, hydrosphere, and lithosphere. Carbon dioxide plays a critical role in regulating the Earth's temperature, and without liquid water on the surface, the Earth's atmosphere would have been too hot for life as we know it.
+            </li>
+            <br>
+            <li>
+                In recent times, human activities have become significant causes of change in the Earth System. The rapid increase in atmospheric carbon dioxide concentration over the past two centuries, especially in the last fifty years, is a significant cause of climate change. The burning of fossil fuels is the primary contributor to this increase, and its effects are too rapid to be explained by natural geologic processes.
+            </li>
+            <br>
+            <li>
+                In summary, the Earth's climate and atmosphere are complex systems that have undergone changes throughout its history. Human activities, such as burning fossil fuels, have increased the concentration of greenhouse gases in the atmosphere, leading to global warming and climate change. These changes have significant implications for the Earth's temperature, precipitation, sea level, and biodiversity, and it is crucial to take steps to reduce the rate of greenhouse gas emissions and mitigate the effects of climate change.
+            </li>
+        </div>
+
+        <div>
+            <div>
+                <h3>
+                    Chapter 23: Review Questions
+                </h3>
+                <!--
+                    Question # 1
+                -->
+                <p>
+                    1. Which gases are “greenhouse gases”? Why do increased concentrations of greenhouse gases cause changes in
+                    global temperature and changes in the global hydrological cycle?            
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Greenhouse gases include carbon dioxide (CO2), methane (CH4), water vapor (H2O), and nitrous oxide (N2O). These gases trap heat in the atmosphere, leading to increased global temperatures and changes in the global hydrological cycle, including changes in precipitation patterns, melting of glaciers and ice caps, and sea level rise.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 2
+                -->
+                <p>
+                    2. What is the ozone hole, and how does it affect us?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">The ozone hole is a thinning of the ozone layer over Antarctica caused by the release of chlorofluorocarbons (CFCs) into the atmosphere. The ozone layer protects the Earth from harmful ultraviolet radiation, and its depletion can lead to increased cases of skin cancer and other health problems.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 3
+                -->
+                <p>
+                    3. How does carbon cycle through the various Earth systems?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Carbon cycles through the Earth's systems through processes such as photosynthesis, respiration, and decomposition. Carbon is taken up by plants through photosynthesis and is passed on to animals through the food chain. Carbon is released into the atmosphere through respiration and decomposition, and is also stored in rocks and soil.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 4
+                -->
+                <p>
+                    4. If (or when) atmospheric concentrations of greenhouse gases double, what will be the likely effects on global
+                    temperature, precipitation, evaporation, and runoff?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Doubling the concentration of greenhouse gases in the atmosphere is projected to cause a global temperature increase of 1.5 to 4.5°C. This increase in temperature is likely to lead to changes in precipitation patterns, increased evaporation rates, sea level rise, and other effects on the global hydrological cycle.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 5
+                -->
+                <p>
+                    5. What processes control the rise and fall of sea level on Earth?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Sea level is controlled by factors such as the amount of water stored on land in glaciers and ice caps, the temperature and salinity of the ocean, and changes in the Earth's gravitational field. Changes in these factors can cause sea level to rise or fall over time.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 6
+                -->
+                <p>
+                    6. What is positive feedback? What is negative feedback? Explain two feedback processes by which increased
+                    evaporation might amplify or limit the effects of greenhouse gases on global climate. Why do these two
+                    processes contribute to scientific uncertainty over how greatly greenhouse gas emissions can alter the global
+                    climate?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Positive feedback amplifies the effects of a change, while negative feedback limits or counteracts the effects of a change. Two feedback processes related to increased evaporation include the water vapor feedback and the ice-albedo feedback. The water vapor feedback amplifies the effects of greenhouse gases by increasing the amount of water vapor in the atmosphere, which in turn leads to further warming. The ice-albedo feedback limits the effects of warming by reflecting more sunlight back into space as ice and snow melts. These feedback processes contribute to scientific uncertainty over how greatly greenhouse gas emissions can alter the global climate because they can either amplify or limit the effects of warming, depending on the specific conditions.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 7
+                -->
+                <p>
+                    7. Contrast ice-house and greenhouse conditions.
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Ice-house and greenhouse conditions refer to periods of the Earth's history when the climate was predominantly cold or warm, respectively. During ice-house conditions, glaciers and ice caps were more extensive, and during greenhouse conditions, there were high levels of carbon dioxide and warmer global temperatures.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 8
+                -->
+                <p>
+                    8. What are the possible causes of long-term climatic change?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Possible causes of long-term climatic change include changes in the Earth's orbit, variations in solar output, volcanic activity, the uplift of land, and the removal of CO2 from the atmosphere through the weathering of rocks.
+                    </p>
+                </details>
+            </div>
+
+            <div>
+                <!--
+                    Question # 9
+                -->
+                <p>
+                    9. What factors explain short-term climatic changes?
+                </p>
+                <details>
+                    <summary style="color:red" >Answer</summary>
+                    <p style="border-width: 5px;color: white;background: rgb(94, 0, 0); border-style: solid; border-color: black">Short-term climatic changes can be caused by fluctuations in solar radiation, changes in Earth's orbit and tilt, changes in reflectivity, changes in ocean currents, and catastrophic events such as volcanic eruptions and bolide impacts.
+                    </p>
+                </details>
+            </div>
+        </div>
+
+
+    </div>
+
+    <br><br>
+    <center>
+    <button onclick="window.location.href = 'escmenu.html';" class="button">ESC Menu</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="window.location.href = '../index.html';" class="button">Main Menu</button>
+    </center>
+    
+    <br><br><br><br>
+</body>
+</html>
